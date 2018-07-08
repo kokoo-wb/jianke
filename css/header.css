@@ -1,0 +1,120 @@
+/**
+ *   Author zhuhuishao
+ *   Name header.css
+ *   
+ *   功能： 提供页面头部的通用css, (Menu、MenuSlide)
+ *   描述： --------------------------------------------
+ */
+
+.header {
+    background: #333;
+    border-bottom: 7px solid #fff;
+    height: 40px;
+}
+
+.menu {
+    color: #fff;
+    height: 40px;
+    line-height: 40px;
+    width: 90%;
+    max-width: 1440px;
+    min-width: 1100px;    
+    margin: 0 auto;
+}
+
+.header h1 {
+    text-align: center;
+    float: left;
+    width: 20%;
+}
+
+.header h1 a {
+    display: block;
+    width: 146px;
+    margin: 0 auto;
+}
+
+.header h1 a img {
+    margin-top: 5px;
+    float: left;
+}
+
+.header h1 a span {
+    float: left;
+    margin-left: 6px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: normal;
+}
+
+.header ul {
+    text-align: center;
+    float: right;
+    width: 80%;
+}
+
+.header ul li {
+    float: left;
+    position: relative;
+    width: 25%;    
+}
+
+.header ul li a {
+    font-size: 14px;
+    color: #fff;
+    -webkit-transition: .3s; 
+    -o-transition: .3s; 
+    transition: .3s;
+}
+
+.header ul li > a:hover {
+    font-size: 15px;
+}
+
+.header ul li:before {
+    position: absolute;
+    bottom: 0px;
+    left: -15px;
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent; 
+    border-right: 6px solid transparent; 
+    border-bottom: 11px solid #fff;
+    display: block;
+}
+
+.header ul li:first-child:before {
+    left: -15px;
+}
+
+.header ul li img {
+    position: relative;
+    top: 3px;
+}
+
+.logout {
+    cursor: pointer;
+}
+
+.logout-btn {
+    font-style: italic;
+}
+
+.slide-menu {
+    width: 100%;
+    height: 40px;
+    z-index: 1000;
+    background: #333;
+    position: absolute;
+    left: 0;
+    top: 47px;
+    text-align: center;
+    line-height: 40px;  
+    display: none; 
+}
+
+.slide-menu a {
+    margin: 0 70px;
+    color: #fff;
+}

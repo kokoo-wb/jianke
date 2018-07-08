@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>桥梁智能检测系统（E.T-test）</title>
+    <link rel="stylesheet" href="../../../../css/global.css" />
+    <link rel="stylesheet" href="../../../../lib/jquery/jquery.treeview.css" />
+    <link rel="stylesheet" href="../../../../css/pagecss/bridgepic.css" />
+
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="menu">
+            <h1>
+                <a href="#">
+                    <img src="../../../../images/logo.png" alt="" />
+                    <span>建科易检</span>
+                </a>
+            </h1>
+            <ul>
+                <li>
+                    <a href="#" data="systemCheck">检测系统</a>
+                </li>
+                <li>
+                    <a href="#">路桥管理</a>
+                </li>
+                <li>
+                    <a href="../../../user_manage.html">用户管理</a>
+                </li>
+                <li>
+                    <a class="logout" onclick="commonPlugins.logout()">
+                        <img src="../../../../images/logout.png" alt="">
+                        <span>/</span>
+                        <span class="logout-btn">退出登录</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="slide-menu"></div>
+    </header>
+
+    <div class="container">
+        <nav class="sidebar">
+            <img src="../../../../images/trianglecolour.png" class="triangle" />
+            <div class="search-input">
+                <img src="../../../../images/searchicon.png" />
+                <input type="text" />
+            </div>
+
+            <ul class="nav">
+                <li class="nav-item">
+                    <div class="nav-first-item">
+                        <span>信息统计</span>
+                        <span class="nav-item-show"></span>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="../../../project_statistics.html">项目信息统计</a>
+                        </li>
+                        <li>
+                            <a href="../../../area_statistics.html">区域信息统计</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item nav-open">
+                    <div class="nav-first-item">
+                        <span>项目管理</span>
+                        <span class="nav-item-show"></span>
+                    </div>
+                    <ul>
+                        <li class="nav-active">
+                            <a href="../../project_list.html">进行中项目</a>
+                        </li>
+                        <li>
+                            <a href="">归档项目</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <div class="nav-first-item">
+                        <span>报告管理</span>
+                        <span class="nav-item-show"></span>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="">项目信息统计</a>
+                        </li>
+                        <li>
+                            <a href="">区域信息统计</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <div class="content-in">
+                <div class="bridge-modal-container">
+                    <div class="bridge-modal-content">
+                        <a href="regulartest.html" class="close-btn">
+                            <img src="../../../../images/crossblack.png" />
+                        </a>
+                        <div class="bridge-modal-header">
+                            <div class="bridge-modal-title">
+                                <img src="../../../../images/icon-r.png" />
+                                <span>芳村客运站人行天桥</span>
+                            </div>
+                            <ul class="bridge-modal-tabs">
+                                <li class="bridge-modal-tabs-active">
+                                    <a href="rt_bridgepic.html">概况照片</a>
+                                </li>
+                                <li>
+                                    <a href="rt_bridgeillness.html">桥梁病害</a>
+                                </li>
+                                <li>
+                                    <a href="rt_bci.html">BCI评价</a>
+                                </li>
+                                <li>
+                                    <a href="rt_originaldata.html">原始记录</a>
+                                </li>
+                                <li>
+                                    <a href="rt_report.html">报告</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="pic-box">
+                            <div class="pic-list-box">
+                                <label>照片列表</label>
+                                <div class="pic-choose">
+                                    <div class="select">
+                                        <span class="select-title">选择图片</span>
+                                        <ul>
+                                            <li>01.jpg</li>
+                                            <li>02.jpg</li>
+                                            <li>03.jpg</li>
+                                        </ul>
+                                    </div>
+                                    <img class="delete-btn" src="../../../../images/delete-black.png" />
+                                    <img class="download-btn" src="../../../../images/download-black.png" />
+                                </div>
+
+                                <label>桥梁结构</label>
+                                <div class="bridge-tree">
+                                    <ul id="bridgeTree" class="treeview-red">
+                                        <li class="open">
+                                            <span>芳村客运站人行天桥</span>
+                                            <ul>
+                                                <li>
+                                                    <span>主桥</span>
+                                                    <ul>
+                                                        <li>
+                                                            <span>demo</span>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span>3#梯道</span>
+                                                    <ul>
+                                                        <li>
+                                                            <span>demo</span>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span>4#梯道</span>
+                                                    <ul>
+                                                        <li>
+                                                            <span>demo</span>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <span>1#梯道</span>
+                                                    <ul>
+                                                        <li>
+                                                            <span>demo</span>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="open">
+                                                    <span>2#梯道</span>
+                                                    <ul>
+                                                        <li>
+                                                            <span>K1</span>
+                                                            <ul>
+                                                                <li>
+                                                                    <span>demo</span>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <span>K2</span>
+                                                            <ul>
+                                                                <li>
+                                                                    <span>demo</span>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <span>K3</span>
+                                                            <ul>
+                                                                <li>
+                                                                    <span>demo</span>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="open">
+                                                            <span>K4</span>
+                                                            <ul>
+                                                                <li>
+                                                                    <span>桥面系</span>
+                                                                </li>
+                                                                <li>
+                                                                    <span>上不结构</span>
+                                                                </li>
+                                                                <li class="open">
+                                                                    <span>下部结构</span>
+                                                                    <ul>
+                                                                        <li>
+                                                                            <span>3-1#盖梁</span>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span>3-1#墩身</span>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span>3-2#墩身</span>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span>3-1#基础</span>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span>4-2#基础</span>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="show-pic">
+                                <div class="show-pic-box">
+                                    <img src="../../../../images/pic.jpg" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 删除图片弹出模态框 -->
+    <div class="modal" id="deleteModal">
+        <p class="modal-title">确认删除该图片</p>
+        <p class="modal-title-last">？</p>
+
+        <a class="confirm-btn onok">删除确认</a>
+        <button class="cancel-btn oncancel">取消</button>
+    </div>
+
+
+    <script src="../../../../lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="../../../../lib/jquery/jquery.cookie.js"></script>
+    <script src="../../../../lib/jquery/jquery.treeview.js"></script>
+    <script src="../../../../js/common.js"></script>
+
+    <script>
+        // 初始化树形下拉菜单
+        $("#bridgeTree").treeview({
+            animated: "fast",
+            collapsed: true,
+            unique: true,
+            persist: "cookie",
+            toggle: function () { }
+        });
+
+        // 删除图片执行
+        $('.delete-btn').click(function () {
+            commonPlugins.showModal('deleteModal', {
+                onOk: function () {
+                    commonPlugins.closeModal();
+                },
+                onCancel: function () {
+                    commonPlugins.closeModal();
+                }
+            });
+        });
+
+        $('.show-pic-box').height($(window).height() - 120);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,182 @@
+.bridge-modal-container {
+    padding: 7px 10px;
+}
+
+.bridge-modal-content {
+    background: #fff; 
+    position: relative;
+    padding-bottom: 30px;
+    min-height: 600px;
+}
+
+.close-btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    opacity: 0.7;
+}
+
+.close-btn img {
+    width: 16px;
+}
+
+.bridge-modal-header {
+    border-bottom: 1px solid #ccc;
+    height: 40px;
+    margin: 0 10px;
+}
+
+.bridge-modal-title {
+    float: left;
+    width: 290px;    
+    height: 40px;
+    line-height: 40px;
+}
+
+.bridge-modal-title img {
+    position: relative;
+    top: 2px;
+    margin-right: 5px;
+}
+
+.bridge-modal-title span {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.bridge-modal-tabs {
+    float: left;
+    height: 40px;
+    width: 670px;
+}
+
+.bridge-modal-tabs li {
+    float: left;
+    margin-right: 10px;
+}
+
+.bridge-modal-tabs li a {
+    padding: 11px 30px;
+    position: relative;
+    cursor: pointer;
+    display: block;
+    color: #333;
+}
+
+.bridge-modal-tabs li:last-child {
+    margin-right: 0;
+}
+
+.bridge-modal-tabs-active {
+    border-bottom: 2px solid #000;
+}
+
+.result-box {
+    padding: 0 10px 30px 10px;
+    margin-top: 15px;
+}
+
+.box-title {
+    margin-top: 20px;
+    height: 40px;
+    line-height: 40px;
+    background: #e5e5e5;
+    padding:0 10px;
+}
+
+.box-title:first-child {
+    margin-top: 0;
+}
+
+.result-form {
+    width: 950px;
+    height: 150px;
+}
+
+.result-form-item {
+    float: left;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.result-form-item label {
+    display: block;
+    width: 90px;
+    float: left;
+    margin-left: 50px;
+}
+
+.result-form-item-left label{
+    margin-left: 0;
+}
+
+.result-form-item input {
+    height: 25px;
+    background: #f5f6f8;
+    border: 1px solid #ccc;
+    outline: none;
+    width: 170px;
+    border-radius: 4px;
+    padding: 0 10px;
+    float: right;
+}
+
+.bciassess-result-table-box {
+    max-height: 500px;
+    overflow: auto;
+    margin-top: 15px;
+    border: 1px solid #e5e5e5;
+}
+
+.bciassess-result-table {
+    border: 0;
+    width: 100%;
+}
+
+.bciassess-result-table td {
+    border: 1px solid #d5d5d5;
+}
+
+.bciassess-result-table tbody tr {
+    height: 30px;
+}
+
+.bciassess-result-table tr:hover {
+    background: #4bd96b;
+}
+
+.bciassess-result-table thead tr {
+    height: 35 !important;
+    text-align: left;
+    background: #e5e5e5;
+}
+
+.bciassess-result-table thead tr th {
+    padding-left: 10px;
+    border: 1px solid #d5d5d5;
+}
+
+.bciassess-result-table thead tr:hover {
+    background: #e5e5e5;
+}
+
+.bciassess-bottom-btn {
+    text-align: center;
+    margin: 35px 0;
+}
+
+.bciassess-bottom-btn a {
+    margin: 0 25px;
+    border: 1px solid #aaa;
+    padding: 4px 10px;
+}
+
+.bciassess-bottom-btn a img {
+    position: relative;
+    top: 2px;
+    margin-right: 5px;
+}

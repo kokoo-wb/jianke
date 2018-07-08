@@ -1,0 +1,140 @@
+.project-divide-content {
+    padding: 20px;
+}
+
+.dropdown {
+    height: 32px;
+}
+
+.dropdown-item {
+    float: left;
+    margin-right: 1.13%;
+}
+
+.dropdown-item:nth-child(1),
+.dropdown-item:nth-child(2) {
+    width: 19.7%;
+}
+
+.dropdown-item:nth-child(3) {
+    width: 19.8%;
+}
+
+.dropdown-item:nth-child(4) {
+    width: 8%;
+}
+
+.dropdown-item:nth-child(5) {
+    width: 10%;
+}
+
+.dropdown-item:nth-child(6) {
+    width: 8%;
+}
+
+.area-search {
+    width: 8%;
+    float: left;
+}
+
+.area-search-btn {
+    height: 32px;
+    background: #4bd96b;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.area-search-btn img {
+    height: 32px;
+}
+
+.map-area {
+    margin-top: 20px;
+    height: 700px;
+    position: relative;
+}
+
+.project-divide-data {
+    position: absolute;
+    z-index: 100; 
+    width: 400px;
+    background: rgba(255,255,255,0.9);
+    top: 10px;
+    left: 10px;
+    padding: 10px 20px 5px 20px;
+}
+
+.provice-data-list {
+    display: none;
+    margin-top: 20px;
+    padding-bottom: 30px;
+    max-height: 550px;
+    overflow: auto;
+}
+
+.provice-data-list li {
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+}
+
+.data-bar {
+    display: block;
+    width: 235px;
+    position: absolute;
+    top: 0;
+    left: 140px;
+}
+
+.data-bar span {
+    display: block;
+    line-height: 1.4em;
+    margin-top: 12px;
+    background: #4bd96b;
+    color: #fff;
+    font-size: 12px;
+}
+
+.show-data-btn {
+    border-top: 1px solid #ddd;
+    height: 30px;
+    position: relative;
+    cursor: pointer;
+}
+
+.show-data-down::after,
+.show-data-up::after {
+    content: '';
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    left: 50%;
+    margin-left: -8px;
+    transform:rotate(45deg);
+    -ms-transform:rotate(45deg); 	
+    -moz-transform:rotate(45deg); 	
+    -webkit-transform:rotate(45deg); 
+    -o-transform:rotate(45deg);    
+}
+
+.show-data-down::after {
+    border-right: 2px solid #999;
+    border-bottom: 2px solid #999;
+    bottom: 10px;    
+}
+
+.show-data-up::after {
+    border-left: 2px solid #999;
+    border-top: 2px solid #999;
+    top: 10px;
+}
+
+.map-show {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    border: 1px solid #fff
+}
+

@@ -1,0 +1,122 @@
+.bridge-modal-container {
+    padding: 7px 10px;
+}
+
+.bridge-modal-content {
+    background: #fff; 
+    position: relative;
+    padding-bottom: 30px;
+    min-height: 600px;
+}
+
+.close-btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    opacity: 0.7;
+}
+
+.close-btn img {
+    width: 16px;
+}
+
+.bridge-modal-header {
+    border-bottom: 1px solid #ccc;
+    height: 40px;
+    margin: 0 10px;
+}
+
+.bridge-modal-title {
+    float: left;
+    width: 290px;    
+    height: 40px;
+    line-height: 40px;
+}
+
+.bridge-modal-title img {
+    position: relative;
+    top: 2px;
+    margin-right: 5px;
+}
+
+.bridge-modal-title span {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.bridge-modal-tabs {
+    float: left;
+    height: 40px;
+    width: 670px;
+}
+
+.bridge-modal-tabs li {
+    float: left;
+    margin-right: 10px;
+}
+
+.bridge-modal-tabs li a {
+    padding: 11px 30px;
+    position: relative;
+    cursor: pointer;
+    display: block;
+    color: #333;
+}
+
+.bridge-modal-tabs li:last-child {
+    margin-right: 0;
+}
+
+.bridge-modal-tabs-active {
+    border-bottom: 2px solid #000;
+}
+
+.report-btn {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.report-btn a {
+    margin: 0 30px;
+    border: 1px solid #aaa;
+    padding: 4px 10px;
+    cursor: pointer;
+}
+
+.report-btn a img {
+    position: relative;
+    top: 2px;
+    margin-right: 5px;
+}
+
+.progress {
+    display: none;
+    width: 260px;
+    border: 1px solid #ccc;
+    height: 8px;
+    padding: 1px;
+    margin: 30px auto;
+}
+
+.progress-bar {
+    background: #4cdb65;
+    height: 8px;
+    width: 0%
+}
+
+.success-msg {
+    display: none;
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+    color: #4cdb65;
+    margin-top: 30px;
+}
+
+.success-msg p {
+    margin-top: 10px;
+}

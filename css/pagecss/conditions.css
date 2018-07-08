@@ -1,0 +1,231 @@
+.bridge-modal-container {
+    padding: 7px 10px;
+}
+
+.bridge-modal-content {
+    background: #fff; 
+    position: relative;
+    padding-bottom: 30px;
+    min-height: 600px;
+}
+
+.close-btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    opacity: 0.7;
+}
+
+.close-btn img {
+    width: 16px;
+}
+
+.bridge-modal-header {
+    border-bottom: 1px solid #ccc;
+    height: 40px;
+    margin: 0 10px;
+}
+
+.bridge-modal-title {
+    float: left;
+    width: 240px;    
+    height: 40px;
+    line-height: 40px;
+}
+
+.bridge-modal-title img {
+    position: relative;
+    top: 2px;
+    margin-right: 5px;
+}
+
+.bridge-modal-title span {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.bridge-modal-tabs {
+    float: left;
+    height: 40px;
+    width: 670px;
+}
+
+.work-condition-tabs li {
+    float: left;
+    margin-right: 10px;
+    padding: 11px 17px;
+    position: relative;
+    cursor: pointer;
+}
+
+.bridge-modal-tabs li {
+    float: left;
+    margin-right: 10px;
+}
+
+.bridge-modal-tabs li a {
+    padding: 11px 17px;
+    position: relative;
+    cursor: pointer;
+    display: block;
+    color: #333;
+}
+
+.bridge-modal-tabs li:last-child {
+    margin-right: 0;
+}
+
+.bridge-modal-tabs-active,
+.work-condition-tabs-active {
+    border-bottom: 2px solid #000;
+}
+
+.work-condition-tabs {
+    height: 40px;
+    border-bottom: 1px solid #ccc;
+    margin: 0 10px;
+}
+
+.work-condition-pic {
+    display: none;
+}
+
+.work-condition-th {
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    background: #e5e5e5;
+    margin-top: 15px;
+}
+
+.work-condition-th li {
+    text-align: center;
+    float: left;
+}
+
+.work-condition-th li:nth-child(1) {
+    width: 15%;
+}
+
+.work-condition-th li:nth-child(2) {
+    width: 28%;
+}
+
+.work-condition-th li:nth-child(3) {
+    width: 35%;
+}
+
+.work-condition-th li:nth-child(4) {
+    width: 22%;
+}
+
+.work-condition-table {
+    border: 1px solid #e5e5e5;
+    width: 100%;
+}
+
+.work-condition-table td {
+    border: 1px solid #e5e5e5;
+}
+
+.work-condition-table tr:hover {
+    background: #4bd96b;
+}
+
+.work-condition-table tr:first-child td:nth-child(1) {
+    width: 15%;
+}
+
+.work-condition-table tr:first-child td:nth-child(2) {
+    width: 28%;
+}
+
+.work-condition-table tr:first-child td:nth-child(3) {
+    width: 35%;
+}
+
+.work-condition-table tr:first-child td:nth-child(4) {
+    width: 22%;
+}
+
+.op-btn {
+    margin: 0 25px;
+}
+
+.work-condition-form {
+    margin: 0 auto;
+    width: 670px;
+    height: 200px;
+    margin-top: 30px;
+}
+
+.work-condition-form-item {
+    float: left;
+    width: 50%;
+    margin-top: 10px;
+}
+
+.work-condition-form-item:first-child {
+    width: 100%;
+}
+
+.work-condition-type .select,
+.work-condition-progress .select {
+    float: left; 
+    width: 190px;
+    border: 1px solid #ccc;
+}
+
+.work-condition-progress .select {
+    width: 100px;
+}
+
+.work-condition-type .select-title,
+.work-condition-progress .select-title {
+    color: #333;
+}
+
+.work-condition-form-item label {
+    position: relative;
+    margin-right: 10px;
+    display: block;
+    width: 120px;
+    float: left;
+    text-align: right;
+    line-height: 30px;
+}
+
+.work-condition-form-item input {
+    height: 30px;
+    border: 1px solid #ccc;
+    width: 170px;
+    outline: none;
+    padding: 0 10px;
+    margin-right: 10px;
+}
+
+.save-btn {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.save-btn a {
+    margin: 0 30px;
+    border: 1px solid #aaa;
+    padding: 4px 10px;
+    cursor: pointer;
+}
+
+.save-btn a:hover {
+    opacity: 0.7;
+}
+
+.save-btn a img {
+    position: relative;
+    top: 2px;
+    margin-right: 5px;
+}

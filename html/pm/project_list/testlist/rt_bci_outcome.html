@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>桥梁智能检测系统（E.T-test）</title>
+    <link rel="stylesheet" href="../../../../css/global.css" />
+    <link rel="stylesheet" href="../../../../css/pagecss/bci_outcome.css" />
+
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="menu">
+            <h1>
+                <a href="#">
+                    <img src="../../../../images/logo.png" alt="" />
+                    <span>建科易检</span>
+                </a>
+            </h1>
+            <ul>
+                <li>
+                    <a href="#" data="systemCheck">检测系统</a>
+                </li>
+                <li>
+                    <a href="#">路桥管理</a>
+                </li>
+                <li>
+                    <a href="../../../user_manage.html">用户管理</a>
+                </li>
+                <li>
+                    <a class="logout" onclick="commonPlugins.logout()">
+                        <img src="../../../../images/logout.png" alt="">
+                        <span>/</span>
+                        <span class="logout-btn">退出登录</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="slide-menu"></div>
+    </header>
+
+    <div class="container">
+        <nav class="sidebar">
+            <img src="../../../../images/trianglecolour.png" class="triangle" />
+            <div class="search-input">
+                <img src="../../../../images/searchicon.png" />
+                <input type="text" />
+            </div>
+
+            <ul class="nav">
+                <li class="nav-item">
+                    <div class="nav-first-item">
+                        <span>信息统计</span>
+                        <span class="nav-item-show"></span>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="../../../project_statistics.html">项目信息统计</a>
+                        </li>
+                        <li>
+                            <a href="../../../area_statistics.html">区域信息统计</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item nav-open">
+                    <div class="nav-first-item">
+                        <span>项目管理</span>
+                        <span class="nav-item-show"></span>
+                    </div>
+                    <ul>
+                        <li class="nav-active">
+                            <a href="../../project_list.html">进行中项目</a>
+                        </li>
+                        <li>
+                            <a href="">归档项目</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <div class="nav-first-item">
+                        <span>报告管理</span>
+                        <span class="nav-item-show"></span>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="">项目信息统计</a>
+                        </li>
+                        <li>
+                            <a href="">区域信息统计</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <div class="content-in">
+                <div class="bridge-modal-container">
+                    <div class="bridge-modal-content">
+                        <a href="regulartest.html" class="close-btn">
+                            <img src="../../../../images/crossblack.png" />
+                        </a>
+                        <div class="bridge-modal-header">
+                            <div class="bridge-modal-title">
+                                <img src="../../../../images/icon-r.png" />
+                                <span>芳村客运站人行天桥</span>
+                            </div>
+                            <ul class="bridge-modal-tabs">
+                                <li>
+                                    <a href="rt_bridgepic.html">概况照片</a>
+                                </li>
+                                <li>
+                                    <a href="rt_bridgeillness.html">桥梁病害</a>
+                                </li>
+                                <li class="bridge-modal-tabs-active">
+                                    <a href="rt_bci.html">BCI评价</a>
+                                </li>
+                                <li>
+                                    <a href="rt_originaldata.html">原始记录</a>
+                                </li>
+                                <li>
+                                    <a href="rt_report.html">报告</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="result-box">
+                            <div class="box-title">BCI评价结果</div>
+                            <div class="result-form">
+                                <div class="result-form-item result-form-item-left">
+                                    <label>项目名称：</label>
+                                    <input type="text" />
+                                </div>
+
+                                <div class="result-form-item">
+                                    <label>业主单位：</label>
+                                    <input type="text" />
+                                </div>
+
+                                <div class="result-form-item">
+                                    <label>检测时间：</label>
+                                    <input type="text" />
+                                </div>
+
+                                <div class="result-form-item result-form-item-left">
+                                    <label>评价日期：</label>
+                                    <input type="text" />
+                                </div>
+
+                                <div class="result-form-item">
+                                    <label>评价单位：</label>
+                                    <input type="text" />
+                                </div>
+
+                                <div class="result-form-item">
+                                    <label>评价人员：</label>
+                                    <input type="text" />
+                                </div>
+
+                                <div class="result-form-item result-form-item-left">
+                                    <label>线路名称：</label>
+                                    <input type="text" />
+                                </div>
+
+                                <div class="result-form-item">
+                                    <label>线路评分：</label>
+                                    <input type="text" />
+                                </div>
+
+                                <div class="result-form-item">
+                                    <label>评价等级：</label>
+                                    <input type="text" />
+                                </div>
+
+                                <div class="result-form-item result-form-item-left">
+                                    <label>桥面系：</label>
+                                    <input type="text" />
+                                </div>
+
+                                <div class="result-form-item">
+                                    <label>上部结构：</label>
+                                    <input type="text" />
+                                </div>
+
+                                <div class="result-form-item">
+                                    <label>下部结构：</label>
+                                    <input type="text" />
+                                </div>
+                            </div>
+
+                            <div class="box-title">桥面系</div>
+                            <table class="bciassess-result-table">
+                                <thead>
+                                    <tr>
+                                        <th>桥面系要素</th>
+                                        <th>权重</th>
+                                        <th>扣分</th>
+                                        <th>扣分x权重</th>
+                                        <th>得分值</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>#1</td>
+                                        <td>支座</td>
+                                        <td>0.12</td>
+                                        <td>0</td>
+                                        <td>0.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>#1</td>
+                                        <td>支座</td>
+                                        <td>0.12</td>
+                                        <td>0</td>
+                                        <td>0.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>#1</td>
+                                        <td>支座</td>
+                                        <td>0.12</td>
+                                        <td>0</td>
+                                        <td>0.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>#1</td>
+                                        <td>支座</td>
+                                        <td>0.12</td>
+                                        <td>0</td>
+                                        <td>0.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>#1</td>
+                                        <td>支座</td>
+                                        <td>0.12</td>
+                                        <td>0</td>
+                                        <td>0.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>#1</td>
+                                        <td>支座</td>
+                                        <td>0.12</td>
+                                        <td>0</td>
+                                        <td>0.00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <div class="box-title">上部结构</div>
+                            <table class="bciassess-result-table">
+                                <thead>
+                                    <tr>
+                                        <th>桥跨</th>
+                                        <th>上不结构要素</th>
+                                        <th>权重</th>
+                                        <th>扣分</th>
+                                        <th>扣分x权重</th>
+                                        <th>得分值</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>#1</td>
+                                        <td>支座</td>
+                                        <td>0.12</td>
+                                        <td>0</td>
+                                        <td>0.00</td>
+                                        <td>100.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>#1</td>
+                                        <td>支座</td>
+                                        <td>0.12</td>
+                                        <td>0</td>
+                                        <td>0.00</td>
+                                        <td>100.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>#1</td>
+                                        <td>支座</td>
+                                        <td>0.12</td>
+                                        <td>0</td>
+                                        <td>0.00</td>
+                                        <td>100.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>#1</td>
+                                        <td>支座</td>
+                                        <td>0.12</td>
+                                        <td>0</td>
+                                        <td>0.00</td>
+                                        <td>100.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>#1</td>
+                                        <td>支座</td>
+                                        <td>0.12</td>
+                                        <td>0</td>
+                                        <td>0.00</td>
+                                        <td>100.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>#1</td>
+                                        <td>支座</td>
+                                        <td>0.12</td>
+                                        <td>0</td>
+                                        <td>0.00</td>
+                                        <td>100.00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <div class="box-title">下部结构</div>
+                            <table class="bciassess-result-table">
+                                <thead>
+                                    <tr>
+                                        <th>台号</th>
+                                        <th>下部结构要素</th>
+                                        <th>权重</th>
+                                        <th>扣分</th>
+                                        <th>扣分x权重</th>
+                                        <th>得分值</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>#1</td>
+                                        <td>支座</td>
+                                        <td>0.12</td>
+                                        <td>0</td>
+                                        <td>0.00</td>
+                                        <td>100.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>#1</td>
+                                        <td>支座</td>
+                                        <td>0.12</td>
+                                        <td>0</td>
+                                        <td>0.00</td>
+                                        <td>100.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>#1</td>
+                                        <td>支座</td>
+                                        <td>0.12</td>
+                                        <td>0</td>
+                                        <td>0.00</td>
+                                        <td>100.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>#1</td>
+                                        <td>支座</td>
+                                        <td>0.12</td>
+                                        <td>0</td>
+                                        <td>0.00</td>
+                                        <td>100.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>#1</td>
+                                        <td>支座</td>
+                                        <td>0.12</td>
+                                        <td>0</td>
+                                        <td>0.00</td>
+                                        <td>100.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>#1</td>
+                                        <td>支座</td>
+                                        <td>0.12</td>
+                                        <td>0</td>
+                                        <td>0.00</td>
+                                        <td>100.00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <div class="bciassess-bottom-btn">
+                                <a>
+                                    <img src="../../../../images/calculation-icon.png" />
+                                    <span>重新计算</span>
+                                </a>
+                                <a>
+                                    <img src="../../../../images/back-icon.png" />
+                                    <span>返回上页</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../../../../lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="../../../../js/common.js"></script>
+</body>
+
+</html>

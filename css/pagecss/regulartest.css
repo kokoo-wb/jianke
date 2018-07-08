@@ -1,0 +1,216 @@
+.test-content {
+    padding: 10px;
+}
+
+.test-content-in {
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.project-title {
+    border-bottom: 1px solid #fff;
+    text-align: center;
+    font-size: 18px;
+    font-weight: normal;
+    height: 40px;
+    line-height: 40px;
+}
+
+.project-op-items {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    position: relative;
+}
+
+.op-item {
+    border: 1px solid #fff;
+    padding: 3px 13px;
+    font-size: 16px;
+    margin: 0 2px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.op-item:hover,
+.op-item-active {
+    background: #58b9fe;
+}
+
+.test-list {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    position: relative;
+    border-top: 1px solid #fff;
+}
+
+.close-btn {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+}
+
+.test-item {
+    border: 1px solid #fff;
+    padding: 3px 13px;
+    margin: 0 2px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.test-item:hover,
+.test-item-active {
+    background: #58b9fe;
+}
+
+.search-area {
+    margin: 0 30px;
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    border-top: 1px solid #fff;
+}
+
+.search-content {
+    width: 350px;
+    height: 40px;
+    float: right;
+}
+
+.search-content span {
+    float: left;
+}
+
+.test-search-input {
+    background: none;
+    border: 1px solid #fff;
+    height: 22px;
+    padding: 0 5px;
+    width: 170px;
+    outline: none;
+    color: #fff;
+    float: left;
+    margin-top: 9px;
+}
+
+.test-search-btn {
+    height: 22px;
+    width: 80px;
+    border: 1px solid #fff;
+    background: none;
+    color: #fff;
+    float: right;
+    margin-top: 9px;
+    cursor: pointer;
+    line-height: 22px;
+    text-align: center;
+}
+
+.test-search-btn:hover {
+    opacity: 0.7;
+}
+
+.test-table {
+    width: 100%;
+    border-color: #fff;
+    border-left: 0;
+    border-right: 0;
+}
+
+.test-table tbody tr:hover {
+    background: #4cdb65;
+}
+
+.test-table th,
+.test-table td {
+    border: 1px solid #fff;
+}
+
+.test-table tr th:last-child,
+.test-table tr td:last-child
+{
+    border-right: 0;
+}
+
+.test-table tr th:first-child,
+.test-table tr td:first-child
+{
+    border-left: 0;
+}
+
+.test-table tbody tr td:nth-child(2) {
+    position: relative;
+}
+
+.delete-test {
+    position: absolute;
+    top: 12px;
+    right: 20px;
+    display: none;
+}
+
+.get-report-btn {
+    cursor: pointer;
+    margin-right: 10px;
+    margin-top: 10px;
+    display: block;
+    float: right;
+    color: #fff;
+    padding: 5px 10px;
+    text-align: center;
+    background: #4bd96b;
+}
+
+.get-report-btn:hover {
+    opacity: 0.7;
+}
+
+.page-bottom {
+    height: 52px;
+}
+
+.page-bottom .pagination {
+    float: left;
+}
+
+.modal-title {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.modal-title-last {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.confirm-btn {
+    display: block;
+    background: #ff4d67;
+    color: #fff;
+    width: 110px;
+    margin: 0 auto;
+    padding: 5px 0;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.cancel-btn {
+    width: 110px;
+    background: none;
+    border: 1px solid #ff4d67;
+    margin: 0 auto;
+    display: block;
+    height: 30px;
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+
+.confirm-btn:hover,
+.cancel-btn:hover {
+    opacity: 0.7;
+}

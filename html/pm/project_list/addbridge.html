@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>桥梁智能检测系统（E.T-area）</title>
+    <link rel="stylesheet" href="../../../css/global.css" />
+    <link rel="stylesheet" href="../../../css/pagecss/addbridge.css" />
+
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="menu">
+            <h1>
+                <a href="#">
+                    <img src="../../../images/logo.png" alt="" />
+                    <span>建科易检</span>
+                </a>
+            </h1>
+            <ul>
+                <li>
+                    <a href="#" data="systemCheck">检测系统</a>
+                </li>
+                <li>
+                    <a href="#">路桥管理</a>
+                </li>
+                <li>
+                    <a href="../../user_manage.html">用户管理</a>
+                </li>
+                <li>
+                    <a class="logout" onclick="commonPlugins.logout()">
+                        <img src="../../../images/logout.png" alt="">
+                        <span>/</span>
+                        <span class="logout-btn">退出登录</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="slide-menu"></div>
+    </header>
+
+    <div class="container">
+        <nav class="sidebar">
+            <img src="../../../images/trianglecolour.png" class="triangle" />
+            <div class="search-input">
+                <img src="../../../images/searchicon.png" />
+                <input type="text" />
+            </div>
+
+            <ul class="nav">
+                <li class="nav-item">
+                    <div class="nav-first-item">
+                        <span>信息统计</span>
+                        <span class="nav-item-show"></span>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="../../project_statistics.html">项目信息统计</a>
+                        </li>
+                        <li>
+                            <a href="../../area_statistics.html">区域信息统计</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item nav-open">
+                    <div class="nav-first-item">
+                        <span>项目管理</span>
+                        <span class="nav-item-show"></span>
+                    </div>
+                    <ul>
+                        <li class="nav-active">
+                            <a href="../project_list.html">进行中项目</a>
+                        </li>
+                        <li>
+                            <a href="">归档项目</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <div class="nav-first-item">
+                        <span>报告管理</span>
+                        <span class="nav-item-show"></span>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="">项目信息统计</a>
+                        </li>
+                        <li>
+                            <a href="">区域信息统计</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <div class="content-in">
+                <div class="area-content">
+                    <div class="area-content-in">
+                        <h1 class="project-title">东莞市松山湖大道市政工程</h1>
+                        <div class="project-op-items">
+                            <a href="../project_list.html" class="close-btn">
+                                <img src="../../../images/close-w.png">
+                            </a>
+                            <a href="info.html" class="op-item">项目信息</a>
+                            <a href="addbridge.html" class="op-item op-item-active">添加桥梁</a>
+                            <a href="testlist.html" class="op-item">检测列表</a>
+                        </div>
+
+                        <!-- 桥梁列表模块 -->
+                        <div class="bridge-list-box">
+                            <div class="search-area">
+                                <div class="search-area-content">
+                                    <span>区 / 县：</span>
+                                    <div class="area-select">
+                                        <div class="select">
+                                            <span class="select-title">区 / 县</span>
+                                            <ul>
+                                                <li>白云区</li>
+                                                <li>番禺区</li>
+                                                <li>天河区</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <span>桥梁名称：</span>
+                                    <input class="area-search-input" type="text" />
+                                    <button class="search-btn">搜索</button>
+                                </div>
+                            </div>
+
+                            <table class="bridge-table" border="1">
+                                <thead>
+                                    <tr>
+                                        <th>序号</th>
+                                        <th>省份</th>
+                                        <th>城市</th>
+                                        <th>区 / 县</th>
+                                        <th>桥梁名称</th>
+                                        <th>加入项目</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>新疆维吾尔自治区</td>
+                                        <td>乌鲁木齐市</td>
+                                        <td></td>
+                                        <td>乌鲁木齐市大桥</td>
+                                        <td>
+                                            <a href="#" class="checkbox-btn" data="0">
+                                                <img src="../../../images/box-empty.png" />
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>新疆维吾尔自治区</td>
+                                        <td>乌鲁木齐市</td>
+                                        <td></td>
+                                        <td>乌鲁木齐市大桥</td>
+                                        <td>
+                                            <a href="#" class="checkbox-btn" data="0">
+                                                <img src="../../../images/box-empty.png" />
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>新疆维吾尔自治区</td>
+                                        <td>乌鲁木齐市</td>
+                                        <td></td>
+                                        <td>乌鲁木齐市大桥</td>
+                                        <td>
+                                            <a href="#" class="checkbox-btn" data="0">
+                                                <img src="../../../images/box-empty.png" />
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>新疆维吾尔自治区</td>
+                                        <td>乌鲁木齐市</td>
+                                        <td></td>
+                                        <td>乌鲁木齐市大桥</td>
+                                        <td>
+                                            <a href="#" class="checkbox-btn" data="0">
+                                                <img src="../../../images/box-empty.png" />
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>新疆维吾尔自治区</td>
+                                        <td>乌鲁木齐市</td>
+                                        <td></td>
+                                        <td>乌鲁木齐市大桥</td>
+                                        <td>
+                                            <a href="#" class="checkbox-btn" data="0">
+                                                <img src="../../../images/box-empty.png" />
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <div class="page-bottom">
+                                <div class="pagination">
+                                    <div class="page-list">
+                                        <a class="first-page">
+                                            <img src="../../../images/page-first.png" />
+                                        </a>
+                                        <a class="pre-page">
+                                            <img src="../../../images/previous-page.png" />
+                                        </a>
+                                        <a class="page-item page-active">1</a>
+                                        <a class="page-item">2</a>
+                                        <a class="page-item">3</a>
+                                        <a class="page-item">4</a>
+                                        <a class="page-item">5</a>
+                                        <a class="page-item page-more">......</a>
+                                        <a class="page-item">6</a>
+                                        <a class="page-item">7</a>
+                                        <a class="page-item">8</a>
+                                        <a class="page-item">9</a>
+                                        <a class="page-item">10</a>
+                                        <a class="next-page">
+                                            <img src="../../../images/next-page.png" />
+                                        </a>
+                                        <a class="last-page">
+                                            <img src="../../../images/final-page.png" />
+                                        </a>
+                                    </div>
+                                    <div class="page-size">
+                                        <div class="page-size-select">
+                                            <div class="select">
+                                                <span class="select-title">10</span>
+                                                <ul>
+                                                    <li>10</li>
+                                                    <li>20</li>
+                                                    <li>30</li>
+                                                    <li>40</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <span class="page-size-unit">项/页</span>
+                                    </div>
+                                </div>
+                                <a class="all-select-btn" data="0">
+                                    <span>全部加入</span>
+                                    <img src="../../../images/box-empty.png" />
+                                </a>
+                                <a class="add-bridge-btn">+ 新增桥梁</a>
+                                <span class="add-bridge-tis">没找到桥梁？</span>
+                            </div>
+                        </div>
+
+
+                        <!-- 桥梁信息模块 -->
+                        <div class="bridge-msg-box" style="display: none;">
+                            <div class="msg-head">
+                                <a class="close-btn close-bridge-msg">
+                                    <img src="../../../images/close-w.png">
+                                </a>
+                                <span>桥梁信息</span>
+                            </div>
+
+                            <div class="bridge-edit">
+                                <div class="bridge-form">
+                                    <div class="bridge-form-left">
+                                        <div class="bridge-form-item">
+                                            <label>
+                                                <span class="require">*</span>
+                                                <span>桥梁名称：</span>
+                                            </label>
+                                            <input type="text" />
+                                        </div>
+                                        <div class="bridge-form-item">
+                                            <label>
+                                                <span class="require">*</span>
+                                                <span>所在省份</span>
+                                            </label>
+                                            <div class="bridge-province-select">
+                                                <div class="select">
+                                                    <span class="select-title">省份</span>
+                                                    <ul>
+                                                        <li>广东省</li>
+                                                        <li>湖南省</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="bridge-form-item">
+                                            <label>
+                                                <span class="require">*</span>
+                                                <span>所属县城：</span>
+                                            </label>
+                                            <div class="bridge-area-select">
+                                                <div class="select">
+                                                    <span class="select-title">区 \ 县</span>
+                                                    <ul>
+                                                        <li>白云区</li>
+                                                        <li>天河区</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="bridge-form-item">
+                                            <label>
+                                                <span>桥梁总长：</span>
+                                            </label>
+                                            <input type="text" />
+                                        </div>
+                                        <div class="bridge-form-item">
+                                            <label>
+                                                <span>桥梁总宽：</span>
+                                            </label>
+                                            <input type="text" />
+                                        </div>
+                                        <div class="bridge-form-item">
+                                            <label>
+                                                <span>荷载等级：</span>
+                                            </label>
+                                            <input type="text" />
+                                        </div>
+                                        <div class="bridge-form-item">
+                                            <label>
+                                                <span>桥梁编号：</span>
+                                            </label>
+                                            <input type="text" />
+                                        </div>
+                                    </div>
+
+                                    <div class="bridge-form-right">
+                                        <div class="bridge-form-item">
+                                            <label>
+                                                <span>桥梁位置：</span>
+                                            </label>
+                                            <input type="text" />
+                                        </div>
+                                        <div class="bridge-form-item">
+                                            <label>
+                                                <span class="require">*</span>
+                                                <span>所在城市：</span>
+                                            </label>
+                                            <div class="bridge-city-select">
+                                                <div class="select">
+                                                    <span class="select-title">地级市</span>
+                                                    <ul>
+                                                        <li>广州市</li>
+                                                        <li>佛山市</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="bridge-form-item">
+                                            <label>
+                                                <span>桥梁走向：</span>
+                                            </label>
+                                            <input type="text" />
+                                        </div>
+                                        <div class="bridge-form-item">
+                                            <label>
+                                                <span>跨径组合：</span>
+                                            </label>
+                                            <input type="text" />
+                                        </div>
+                                        <div class="bridge-form-item">
+                                            <label>
+                                                <span>横向布置：</span>
+                                            </label>
+                                            <input type="text" />
+                                        </div>
+                                        <div class="bridge-form-item">
+                                            <label>
+                                                <span>建造年代：</span>
+                                            </label>
+                                            <input type="text" />
+                                        </div>
+                                        <div class="bridge-form-item">
+                                            <label>
+                                                <span>全国统一编号：</span>
+                                            </label>
+                                            <input type="text" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="bridge-op">
+                                    <a>
+                                        <img src="../../../images/save.png" />
+                                        <span>保存信息</span>
+                                    </a>
+                                    <a class="change-county-btn">
+                                        <img src="../../../images/update.png" />
+                                        <span>修改县区</span>
+                                    </a>
+                                </div>
+
+                                <div class="bridge-upload">
+                                    <span>桥梁位置图：</span>
+                                    <input id="fileInput" type="file" />
+                                    <input id="fileShowInput" type="text" placeholder="点击浏览..." />
+                                    <a>
+                                        <img src="../../../images/upload.png" />
+                                        <span>上传位图</span>
+                                    </a>
+                                </div>
+                            </div>
+
+
+                            <!-- 县城信息模块 -->
+                            <div class="county-box" style="display:none;">
+                                <div class="msg-head">
+                                    <a class="close-btn close-county">
+                                        <img src="../../../images/close-w.png">
+                                    </a>
+                                    <span>县城信息</span>
+                                </div>
+
+                                <div class="search-area">
+                                    <div class="search-area-content">
+                                        <span>区 / 县：</span>
+                                        <div class="area-select">
+                                            <div class="select">
+                                                <span class="select-title">区 / 县</span>
+                                                <ul>
+                                                    <li>白云区</li>
+                                                    <li>番禺区</li>
+                                                    <li>天河区</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <span>桥梁名称：</span>
+                                        <input class="area-search-input" type="text" />
+                                        <button class="search-btn">搜索</button>
+                                    </div>
+                                </div>
+
+                                <table class="area-table" border="1">
+                                    <thead>
+                                        <tr>
+                                            <th>邮政编号</th>
+                                            <th>县城名</th>
+                                            <th>操作</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>510000</td>
+                                            <td>天河区</td>
+                                            <td>
+                                                <a href="#" onclick="commonPlugins.showModal('editAreaModal')">
+                                                    <img src="../../../images/update.png" />
+                                                </a>
+                                                <a href="#" onclick="commonPlugins.showModal('deleteAreaModal')">
+                                                    <img src="../../../images/delete.png" />
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>510000</td>
+                                            <td>天河区</td>
+                                            <td>
+                                                <a href="#" onclick="commonPlugins.showModal('editAreaModal')">
+                                                    <img src="../../../images/update.png" />
+                                                </a>
+                                                <a href="#" onclick="commonPlugins.showModal('deleteAreaModal')">
+                                                    <img src="../../../images/delete.png" />
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>510000</td>
+                                            <td>天河区</td>
+                                            <td>
+                                                <a href="#" onclick="commonPlugins.showModal('editAreaModal')">
+                                                    <img src="../../../images/update.png" />
+                                                </a>
+                                                <a href="#" onclick="commonPlugins.showModal('deleteAreaModal')">
+                                                    <img src="../../../images/delete.png" />
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>510000</td>
+                                            <td>天河区</td>
+                                            <td>
+                                                <a href="#" onclick="commonPlugins.showModal('editAreaModal')">
+                                                    <img src="../../../images/update.png" />
+                                                </a>
+                                                <a href="#" onclick="commonPlugins.showModal('deleteAreaModal')">
+                                                    <img src="../../../images/delete.png" />
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>510000</td>
+                                            <td>天河区</td>
+                                            <td>
+                                                <a href="#" onclick="commonPlugins.showModal('editAreaModal')">
+                                                    <img src="../../../images/update.png" />
+                                                </a>
+                                                <a href="#" onclick="commonPlugins.showModal('deleteAreaModal')">
+                                                    <img src="../../../images/delete.png" />
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="page-bottom">
+                                    <div class="pagination">
+                                        <div class="page-list">
+                                            <a class="first-page">
+                                                <img src="../../../images/page-first.png" />
+                                            </a>
+                                            <a class="pre-page">
+                                                <img src="../../../images/previous-page.png" />
+                                            </a>
+                                            <a class="page-item page-active">1</a>
+                                            <a class="page-item">2</a>
+                                            <a class="page-item">3</a>
+                                            <a class="page-item">4</a>
+                                            <a class="page-item">5</a>
+                                            <a class="page-item page-more">......</a>
+                                            <a class="page-item">6</a>
+                                            <a class="page-item">7</a>
+                                            <a class="page-item">8</a>
+                                            <a class="page-item">9</a>
+                                            <a class="page-item">10</a>
+                                            <a class="next-page">
+                                                <img src="../../../images/next-page.png" />
+                                            </a>
+                                            <a class="last-page">
+                                                <img src="../../../images/final-page.png" />
+                                            </a>
+                                        </div>
+                                        <div class="page-size">
+                                            <div class="page-size-select">
+                                                <div class="select">
+                                                    <span class="select-title">10</span>
+                                                    <ul>
+                                                        <li>10</li>
+                                                        <li>20</li>
+                                                        <li>30</li>
+                                                        <li>40</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                            <span class="page-size-unit">项/页</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 全选桥梁模态框 -->
+        <div class="modal" id="selectAllModal">
+            <p class="modal-title-last">
+                <img src="../../../images/modal-tips.png" />
+            </p>
+            <p class="modal-title-last">确认全部加入</p>
+            <p class="modal-title-last">并进入检查列表</p>
+
+            <a class="select-confirm-btn onok">确认</a>
+            <button class="cancel-btn oncancel">取消</button>
+        </div>
+
+
+        <!-- 移除桥梁模态框 -->
+        <div class="modal" id="deleteModal">
+            <p class="modal-title">
+                <img src="../../../images/modal-tis.png" />
+            </p>
+            <p class="modal-title">确认全部从列表中删除</p>
+            <p class="modal-title-last">？</p>
+
+            <a class="confirm-btn onok">删除确认</a>
+            <button class="cancel-btn oncancel">取消</button>
+        </div>
+
+
+        <!-- 移除单个桥梁模态框 -->
+        <div class="modal" id="deleteSingleModal">
+            <p class="modal-title">
+                <img src="../../../images/modal-tis.png" />
+            </p>
+            <p class="modal-title">确认从列表中删除</p>
+            <p class="modal-title-last">？</p>
+
+            <a class="confirm-btn onok">删除确认</a>
+            <button class="cancel-btn oncancel">取消</button>
+        </div>
+
+
+        <!-- 编辑县城模态框 -->
+        <div class="modal" id="editAreaModal">
+            <div class="area-input-item first-input">
+                <label>邮政编号：</label>
+                <input type="text" />
+            </div>
+            <div class="area-input-item">
+                <label>县区名称：</label>
+                <input type="password" />
+            </div>
+
+            <a class="submit-confirm-btn">确认</a>
+            <button class="cancel-btn" onclick="commonPlugins.closeModal()">取消</button>
+        </div>
+
+
+        <!-- 删除县城模态框 -->
+        <div class="modal" id="deleteAreaModal">
+            <p class="modal-title">天河区</p>
+            <p class="modal-title">确认从列表中删除</p>
+            <p class="modal-title-last">？</p>
+
+            <a class="confirm-btn">删除确认</a>
+            <button class="cancel-btn" onclick="commonPlugins.closeModal()">取消</button>
+        </div>
+    </div>
+
+
+    <script src="../../../lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="../../../js/common.js"></script>
+
+    <script>
+        // 复选框选中(取消选中)
+        $('.checkbox-btn').click(function () {
+            if ($(this).attr('data') == 0) {
+                $(this).attr('data', 1).find('img').attr('src', '../../../images/click-add.png');
+            }
+            else {
+                var _this = this;
+                commonPlugins.showModal('deleteSingleModal', {
+                    onOk: function () {
+                        $(_this).attr('data', 0).find('img').attr('src', '../../../images/box-empty.png');
+                        commonPlugins.closeModal();
+                    },
+                    onCancel: function () {
+                        commonPlugins.closeModal();
+                    }
+                });
+            }
+        });
+
+        // 判断并弹出全选(取消全选) 确认框
+        $('.all-select-btn').click(function () {
+            if ($(this).attr('data') == 0) {
+                commonPlugins.showModal('selectAllModal', {
+                    onOk: function () {
+                        $('.bridge-table tr td a').attr('data', 1).find('img').attr('src', '../../../images/click-add.png');
+                        $('.all-select-btn').attr('data', 1).find('img').attr('src', '../../../images/click-add.png');
+                        commonPlugins.closeModal();
+                    },
+                    onCancel: function () {
+                        commonPlugins.closeModal();
+                    }
+                })
+            }
+            else {
+                commonPlugins.showModal('deleteModal', {
+                    onOk: function () {
+                        $('.bridge-table tr td a').attr('data', 0).find('img').attr('src', '../../../images/box-empty.png');
+                        $('.all-select-btn').attr('data', 0).find('img').attr('src', '../../../images/box-empty.png');
+                        commonPlugins.closeModal();
+                    },
+                    onCancel: function () {
+                        commonPlugins.closeModal();
+                    }
+                });
+            }
+        });
+
+
+        // 点击新增桥梁触发填写桥梁信息弹窗
+        $('.add-bridge-btn').click(function () {
+            $('.bridge-list-box').hide();
+            $('.bridge-msg-box').show();
+            $('.bridge-edit').show();
+        });
+
+        // 点击新增桥梁触发填写桥梁信息弹窗
+        $('.change-county-btn').click(function () {
+            $('.bridge-edit').hide();
+            $('.county-box').show();
+        });
+
+        // 点击新增桥梁触发填写桥梁信息弹窗
+        $('.close-bridge-msg').click(function () {
+            $('.county-box').hide();
+            $('.bridge-msg-box').hide();
+            $('.bridge-list-box').show();
+        });
+
+        // 点击新增桥梁触发填写桥梁信息弹窗
+        $('.close-county').click(function () {
+            $('.county-box').hide();
+            $('.bridge-edit').show();
+        });
+
+
+        // 点击input框触发点击fileInput框
+        $('#fileShowInput').click(function () {
+            $('#fileInput').click();
+        });
+
+        // fileInput框内容改变触发input框内容变化
+        $('#fileInput').change(function () {
+            $('#fileShowInput').val($('#fileInput').val());
+        });
+    </script>
+</body>
+
+</html>

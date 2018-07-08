@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>桥梁智能检测系统（E.T-Bridge）</title>
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/pagecss/area_statistics.css" />
+
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="menu">
+            <h1>
+                <a href="#">
+                    <img src="../images/logo.png" alt="" />
+                    <span>建科易检</span>
+                </a>
+            </h1>
+            <ul>
+                <li>
+                    <a href="#" data="systemCheck">检测系统</a>
+                </li>
+                <li>
+                    <a href="#">路桥管理</a>
+                </li>
+                <li>
+                    <a href="user_manage.html">用户管理</a>
+                </li>
+                <li>
+                    <a class="logout" onclick="commonPlugins.logout()">
+                        <img src="../images/logout.png" alt="">
+                        <span>/</span>
+                        <span class="logout-btn">退出登录</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="slide-menu"></div>
+    </header>
+
+    <div class="container">
+        <nav class="sidebar">
+            <img src="../images/trianglecolour.png" class="triangle" />
+            <div class="search-input">
+                <img src="../images/searchicon.png" />
+                <input type="text" />
+            </div>
+
+            <ul class="nav">
+                <li class="nav-item nav-open">
+                    <div class="nav-first-item">
+                        <span>信息统计</span>
+                        <span class="nav-item-show"></span>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="project_statistics.html">项目信息统计</a>
+                        </li>
+                        <li class="nav-active">
+                            <a href="area_statistics.html">区域信息统计</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <div class="nav-first-item">
+                        <span>项目管理</span>
+                        <span class="nav-item-show"></span>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="pm/project_list.html">进行中项目</a>
+                        </li>
+                        <li>
+                            <a href="">归档项目</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <div class="nav-first-item">
+                        <span>报告管理</span>
+                        <span class="nav-item-show"></span>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="">项目信息统计</a>
+                        </li>
+                        <li>
+                            <a href="">区域信息统计</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <div class="content-in">
+                <div class="project-divide-content">
+                    <div class="dropdown">
+                        <div class="dropdown-item">
+                            <div class="select">
+                                <span class="select-title">省份</span>
+                                <ul>
+                                    <li>广东省</li>
+                                    <li>辽宁省</li>
+                                    <li>福建省</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="dropdown-item">
+                            <div class="select">
+                                <span class="select-title">地级市</span>
+                                <ul>
+                                    <li>广州市</li>
+                                    <li>惠州市</li>
+                                    <li>佛山市</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="dropdown-item">
+                            <div class="select">
+                                <span class="select-title">区 / 县</span>
+                                <ul>
+                                    <li>白云区</li>
+                                    <li>天河区</li>
+                                    <li>海珠区</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="dropdown-item">
+                            <div class="select">
+                                <span class="select-title">年份</span>
+                                <ul>
+                                    <li>2015</li>
+                                    <li>2016</li>
+                                    <li>2017</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="dropdown-item">
+                            <div class="select">
+                                <span class="select-title">项目数</span>
+                                <ul>
+                                    <li>5</li>
+                                    <li>20</li>
+                                    <li>50</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="dropdown-item">
+                            <div class="select">
+                                <span class="select-title">排序</span>
+                                <ul>
+                                    <li>升序</li>
+                                    <li>降序</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="area-search">
+                            <div class="area-search-btn">
+                                <img src="../images/search-btn.jpg" />
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="map-area">
+                        <div class="project-divide-data">
+                            <ul class="provice-data-list">
+                                <li>
+                                    <span>1</span>
+                                    <span>内蒙古自治区</span>
+                                    <div class="data-bar">
+                                        <span style="width: 85%;">2000</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>2</span>
+                                    <span>广东省</span>
+                                    <div class="data-bar">
+                                        <span style="width: 80%;">2000</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>3</span>
+                                    <span>新疆维吾尔自治区</span>
+                                    <div class="data-bar">
+                                        <span style="width: 70%;">2000</span>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="show-data-btn show-data-down"></div>
+                        </div>
+                        <div id="allmap" class="map-show"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="http://api.map.baidu.com/api?v=1.5&ak=DE84ef52718b953df3b628be2059fcaa"></script>
+    <script src="http://api.map.baidu.com/getscript?v=1.5&ak=DE84ef52718b953df3b628be2059fcaa&services=&t=20171009065943"></script>
+    <script src="../js/common.js"></script>
+
+    <script type="text/javascript">
+
+        // 百度地图API功能
+        var map = new BMap.Map("allmap");
+        var point = new BMap.Point(116.404, 39.915);
+        map.centerAndZoom(point, 15);
+        map.addControl(new BMap.NavigationControl({
+            anchor: BMAP_ANCHOR_BOTTOM_RIGHT
+        }));
+        map.addControl(new BMap.ScaleControl());
+        map.addControl(new BMap.OverviewMapControl());
+
+        // 开启滚轮缩放地图大小
+        // map.enableScrollWheelZoom(true);
+
+        //map.addControl(new BMap.MapTypeControl());
+        // 编写自定义函数,创建标注
+        function addMarker(point) {
+            var marker = new BMap.Marker(point);
+            map.addOverlay(marker);
+        }
+        // 随机向地图添加25个标注
+        var bounds = map.getBounds();
+        var sw = bounds.getSouthWest();
+        var ne = bounds.getNorthEast();
+        var lngSpan = Math.abs(sw.lng - ne.lng);
+        var latSpan = Math.abs(ne.lat - sw.lat);
+        for (var i = 0; i < 25; i++) {
+            var point = new BMap.Point(sw.lng + lngSpan * (Math.random() * 0.7), ne.lat - latSpan * (Math.random() * 0.7));
+            addMarker(point);
+        }
+
+
+        // 点击显示(收起)项目分布图
+        $('.show-data-btn').click(function () {
+            if ($('.provice-data-list').css('display') == 'block') {
+                $('.provice-data-list').slideUp('fast');
+                $(this).removeClass('show-data-up');
+                $(this).addClass('show-data-down');
+            }
+            else {
+                $('.provice-data-list').slideDown('fast');
+                $(this).removeClass('show-data-down');
+                $(this).addClass('show-data-up');
+            }
+        });
+
+        $('.map-area').height($(window).height());
+    </script>
+</body>
+
+</html>

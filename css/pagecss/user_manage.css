@@ -1,0 +1,131 @@
+.user-list-table {
+    width: 80%;
+    margin: 0 auto;
+    color: #fff;
+    border: 1px solid #fff;
+    border-color: #fff;
+}
+
+.add-user-btn {
+    cursor: pointer;
+    color: #fff;
+    display: block;
+    width: 130px;
+    background: #4bd96c;
+    margin: 0 auto;
+    text-align: center;
+    height: 35px;
+    line-height: 35px;
+    margin-top: 30px;
+}
+
+.user-input-item {
+    margin: 10px auto;
+    width: 240px;
+}
+
+.first-input {
+    margin-top: 30px;
+}
+
+.user-input-item label {
+    width: 60px;
+    display: inline-block; 
+    text-align: right;
+}
+
+.user-input-item input {
+    width: 150px;
+    height: 30px;
+    border: 1px solid #ccc;
+    padding: 0 10px;
+    outline: none;
+}
+
+.user-type {
+    margin: 10px auto;
+    margin-bottom: 80px;
+    width: 230px;
+}
+
+.user-type label {
+    width: 60px;
+    display: inline-block;
+    text-align: right;
+    line-height: 30px;
+}
+
+.user-type-select {
+    width: 168px;
+    border: 1px solid #ccc;
+    float: right;
+    height: 30px;
+}
+
+.user-type-select .select-title {
+    color: #555;
+}
+
+.save-btn {
+    display: block;
+    background: #4bd96b;
+    color: #fff;
+    width: 110px;
+    margin: 0 auto;
+    padding: 5px 0;
+    text-align: center;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.save-btn img {
+    margin-right: 10px;
+}
+
+.save-btn span {
+    position: relative;
+    bottom: 1px;
+}
+
+.cancel-btn {
+    width: 110px;
+    background: none;
+    border: 1px solid #ccc;
+    margin: 0 auto;
+    display: block;
+    height: 30px;
+    outline: none;
+    cursor: pointer;
+}
+
+.cancel-btn img {
+    margin-right: 20px;
+}
+
+.cancel-btn span {
+    position: relative;
+    bottom: 1px;
+    margin-right: 20px;
+    font-size: 14px;
+}
+
+.editor-btn {
+    display: block;
+    width: 40%;
+    float: left;
+    margin-left: 10%;
+}
+
+.delete-btn {
+    display: block;
+    width: 40%;
+    float: right;
+    margin-right: 10%;
+}
+
+.save-btn:hover,
+.cancel-btn:hover,
+.editor-btn:hover,
+.delete-btn:hover {
+    opacity: 0.7;
+}

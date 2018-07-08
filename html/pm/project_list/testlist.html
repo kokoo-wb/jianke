@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>桥梁智能检测系统（E.T-general-test）</title>
+    <link rel="stylesheet" href="../../../css/global.css" />
+    <link rel="stylesheet" href="../../../css/pagecss/testlist.css" />
+
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="menu">
+            <h1>
+                <a href="#">
+                    <img src="../../../images/logo.png" alt="" />
+                    <span>建科易检</span>
+                </a>
+            </h1>
+            <ul>
+                <li>
+                    <a href="#" data="systemCheck">检测系统</a>
+                </li>
+                <li>
+                    <a href="#">路桥管理</a>
+                </li>
+                <li>
+                    <a href="../../user_manage.html">用户管理</a>
+                </li>
+                <li>
+                    <a class="logout" onclick="commonPlugins.logout()">
+                        <img src="../../../images/logout.png" alt="">
+                        <span>/</span>
+                        <span class="logout-btn">退出登录</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="slide-menu"></div>
+    </header>
+
+    <div class="container">
+        <nav class="sidebar">
+            <img src="../../../images/trianglecolour.png" class="triangle" />
+            <div class="search-input">
+                <img src="../../../images/searchicon.png" />
+                <input type="text" />
+            </div>
+
+            <ul class="nav">
+                <li class="nav-item">
+                    <div class="nav-first-item">
+                        <span>信息统计</span>
+                        <span class="nav-item-show"></span>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="../../project_statistics.html">项目信息统计</a>
+                        </li>
+                        <li>
+                            <a href="../../area_statistics.html">区域信息统计</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item nav-open">
+                    <div class="nav-first-item">
+                        <span>项目管理</span>
+                        <span class="nav-item-show"></span>
+                    </div>
+                    <ul>
+                        <li class="nav-active">
+                            <a href="../project_list.html">进行中项目</a>
+                        </li>
+                        <li>
+                            <a href="">归档项目</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <div class="nav-first-item">
+                        <span>报告管理</span>
+                        <span class="nav-item-show"></span>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="">项目信息统计</a>
+                        </li>
+                        <li>
+                            <a href="">区域信息统计</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <div class="content-in">
+                <div class="general-test-content">
+                    <div class="general-test-content-in">
+                        <h1 class="project-title">东莞市松山湖大道市政工程</h1>
+                        <div class="project-op-items">
+                            <a href="../project_list.html" class="close-btn">
+                                <img src="../../../images/close-w.png">
+                            </a>
+                            <a href="info.html" class="op-item">项目信息</a>
+                            <a href="addbridge.html" class="op-item">添加桥梁</a>
+                            <a href="testlist.html" class="op-item op-item-active">检测列表</a>
+                        </div>
+
+                        <div class="search-area">
+                            <div class="search-area-content">
+                                <span>区 / 县：</span>
+                                <div class="area-select">
+                                    <div class="select">
+                                        <span class="select-title">区 / 县</span>
+                                        <ul>
+                                            <li>白云区</li>
+                                            <li>番禺区</li>
+                                            <li>天河区</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <span>桥梁名称：</span>
+                                <input class="general-test-search-input" type="text" />
+                                <button class="search-btn">搜索</button>
+                            </div>
+                        </div>
+
+                        <table class="general-test-table" border="1">
+                            <thead>
+                                <tr>
+                                    <th>序号</th>
+                                    <th>桥梁名称</th>
+                                    <th colspan="2">
+                                        <img src="../../../images/d-icon.png" />
+                                        <span>日常巡查</span>
+                                    </th>
+                                    <th colspan="2">
+                                        <img src="../../../images/r-icon.png" />
+                                        <span>定期检测</span>
+                                    </th>
+                                    <th colspan="2">
+                                        <img src="../../../images/n-icon.png" />
+                                        <span>无损检测</span>
+                                    </th>
+                                    <th colspan="2">
+                                        <img src="../../../images/s-icon.png" />
+                                        <span>静载测试</span>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>
+                                        <span>缪边路跨线桥</span>
+                                        <a class="delete-test" href="#" onclick="commonPlugins.showModal('deleteModal')">
+                                            <img src="../../../images/delete.png">
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="checkbox-btn" data="0">
+                                            <img src="../../../images/box-empty.png" />
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#">
+                                            <img src="../../../images/update.png" />
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="checkbox-btn" data="0">
+                                            <img src="../../../images/box-empty.png" />
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#">
+                                            <img src="../../../images/update.png" />
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="checkbox-btn" data="0">
+                                            <img src="../../../images/box-empty.png" />
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#">
+                                            <img src="../../../images/update.png" />
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="checkbox-btn" data="0">
+                                            <img src="../../../images/box-empty.png" />
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#">
+                                            <img src="../../../images/update.png" />
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>2</td>
+                                    <td>
+                                        <span>缪边路跨线桥</span>
+                                        <a class="delete-test" href="#" onclick="commonPlugins.showModal('deleteModal')">
+                                            <img src="../../../images/delete.png">
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="checkbox-btn" data="0">
+                                            <img src="../../../images/box-empty.png" />
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#">
+                                            <img src="../../../images/update.png" />
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="checkbox-btn" data="0">
+                                            <img src="../../../images/box-empty.png" />
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#">
+                                            <img src="../../../images/update.png" />
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="checkbox-btn" data="0">
+                                            <img src="../../../images/box-empty.png" />
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#">
+                                            <img src="../../../images/update.png" />
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="checkbox-btn" data="0">
+                                            <img src="../../../images/box-empty.png" />
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#">
+                                            <img src="../../../images/update.png" />
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>3</td>
+                                    <td>
+                                        <span>缪边路跨线桥</span>
+                                        <a class="delete-test" href="#" onclick="commonPlugins.showModal('deleteModal')">
+                                            <img src="../../../images/delete.png">
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="checkbox-btn" data="0">
+                                            <img src="../../../images/box-empty.png" />
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#">
+                                            <img src="../../../images/update.png" />
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="checkbox-btn" data="0">
+                                            <img src="../../../images/box-empty.png" />
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#">
+                                            <img src="../../../images/update.png" />
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="checkbox-btn" data="0">
+                                            <img src="../../../images/box-empty.png" />
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#">
+                                            <img src="../../../images/update.png" />
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="checkbox-btn" data="0">
+                                            <img src="../../../images/box-empty.png" />
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#">
+                                            <img src="../../../images/update.png" />
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td colspan="2">
+                                        <a href="#" class="all-select-btn all-d" data="0" data-type="all-d">
+                                            <img src="../../../images/box-empty.png" />
+                                            <span>全选日常</span>
+                                        </a>
+                                    </td>
+                                    <td colspan="2">
+                                        <a href="#" class="all-select-btn all-r" data="0" data-type="all-r">
+                                            <img src="../../../images/box-empty.png" />
+                                            <span>全选定期</span>
+                                        </a>
+                                    </td>
+                                    <td colspan="2">
+                                        <a href="#" class="all-select-btn all-n" data="0" data-type="all-n">
+                                            <img src="../../../images/box-empty.png" />
+                                            <span>全选无损</span>
+                                        </a>
+                                    </td>
+                                    <td colspan="2">
+                                        <a href="#" class="all-select-btn all-s" data="0" data-type="all-s">
+                                            <img src="../../../images/box-empty.png" />
+                                            <span>全选静载</span>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="page-bottom">
+                            <div class="pagination">
+                                <div class="page-list">
+                                    <a class="first-page">
+                                        <img src="../../../images/page-first.png" />
+                                    </a>
+                                    <a class="pre-page">
+                                        <img src="../../../images/previous-page.png" />
+                                    </a>
+                                    <a class="page-item page-active">1</a>
+                                    <a class="page-item">2</a>
+                                    <a class="page-item">3</a>
+                                    <a class="page-item">4</a>
+                                    <a class="page-item">5</a>
+                                    <a class="page-item page-more">......</a>
+                                    <a class="page-item">6</a>
+                                    <a class="page-item">7</a>
+                                    <a class="page-item">8</a>
+                                    <a class="page-item">9</a>
+                                    <a class="page-item">10</a>
+                                    <a class="next-page">
+                                        <img src="../../../images/next-page.png" />
+                                    </a>
+                                    <a class="last-page">
+                                        <img src="../../../images/final-page.png" />
+                                    </a>
+                                </div>
+                                <div class="page-size">
+                                    <div class="page-size-select">
+                                        <div class="select">
+                                            <span class="select-title">10</span>
+                                            <ul>
+                                                <li>10</li>
+                                                <li>20</li>
+                                                <li>30</li>
+                                                <li>40</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <span class="page-size-unit">项/页</span>
+                                </div>
+                            </div>
+                            <a href="testlist/regulartest.html" class="show-report-btn">查看检测内容</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal" id="selectAllDModal">
+            <p class="modal-title">
+                <img src="../../../images/icon-d.png" />
+                <span>日常巡查</span>
+            </p>
+            <p class="modal-title-last">
+                <img src="../../../images/modal-tips.png" />
+            </p>
+            <p class="modal-title-last">确认全选？</p>
+
+            <a class="select-confirm-btn onok">确认</a>
+            <button class="cancel-btn oncancel">取消</button>
+        </div>
+
+        <div class="modal" id="selectAllRModal">
+            <p class="modal-title">
+                <img src="../../../images/icon-r.png" />
+                <span>定期检测</span>
+            </p>
+            <p class="modal-title-last">
+                <img src="../../../images/modal-tips.png" />
+            </p>
+            <p class="modal-title-last">确认全选？</p>
+
+            <a class="select-confirm-btn onok">确认</a>
+            <button class="cancel-btn oncancel">取消</button>
+        </div>
+
+        <div class="modal" id="selectAllNModal">
+            <p class="modal-title">
+                <img src="../../../images/icon-n.png" />
+                <span>无损检测</span>
+            </p>
+            <p class="modal-title-last">
+                <img src="../../../images/modal-tips.png" />
+            </p>
+            <p class="modal-title-last">确认全选？</p>
+
+            <a class="select-confirm-btn onok">确认</a>
+            <button class="cancel-btn oncancel">取消</button>
+        </div>
+
+        <div class="modal" id="selectAllSModal">
+            <p class="modal-title">
+                <img src="../../../images/icon-s.png" />
+                <span>静载测试</span>
+            </p>
+            <p class="modal-title-last">
+                <img src="../../../images/modal-tips.png" />
+            </p>
+            <p class="modal-title-last">确认全选？</p>
+
+            <a class="select-confirm-btn onok">确认</a>
+            <button class="cancel-btn oncancel">取消</button>
+        </div>
+
+
+        <!-- 删除弹出模态框 -->
+        <div class="modal" id="deleteModal">
+            <p class="modal-title">缪边路跨线桥</p>
+            <p class="modal-title">确认从检测列表中删除</p>
+            <p class="modal-title-last">？</p>
+
+            <a class="confirm-btn">删除确认</a>
+            <button class="cancel-btn" onclick="commonPlugins.closeModal()">取消</button>
+        </div>
+
+        <!-- 移除全部弹出模态框 -->
+        <div class="modal" id="deleteAllModal">
+            <p class="modal-title">
+                <img src="../../../images/modal-tis.png" />
+            </p>
+            <p class="modal-title">确认全部从列表中删除</p>
+            <p class="modal-title-last">？</p>
+
+            <a class="confirm-btn onok">删除确认</a>
+            <button class="cancel-btn oncancel">取消</button>
+        </div>
+
+        <!-- 移除单个弹出模态框 -->
+        <div class="modal" id="deleteSingleModal">
+            <p class="modal-title">
+                <img src="../../../images/modal-tis.png" />
+            </p>
+            <p class="modal-title">确认从列表中删除</p>
+            <p class="modal-title-last">？</p>
+
+            <a class="confirm-btn onok">删除确认</a>
+            <button class="cancel-btn oncancel">取消</button>
+        </div>
+    </div>
+
+
+    <script src="../../../lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="../../../js/common.js"></script>
+
+    <script>
+        // 4种全选类型枚举对象
+        var EnumModalType = {
+            'all-d': { func: 'selectAllDModal', tdNum: 2 },
+            'all-r': { func: 'selectAllRModal', tdNum: 4 },
+            'all-n': { func: 'selectAllNModal', tdNum: 6 },
+            'all-s': { func: 'selectAllSModal', tdNum: 8 }
+        };
+
+
+        // 鼠标经过显示删除按钮
+        $('.general-test-table tbody tr').hover(function () {
+            $(this).find('.delete-test').show();
+        }, function () {
+            $(this).find('.delete-test').hide();
+        });
+
+
+        // 复选框选中(取消选中)
+        $('.checkbox-btn').click(function () {
+            if ($(this).attr('data') == 0) {
+                $(this).attr('data', 1).find('img').attr('src', '../../../images/click-add.png');
+            }
+            else {
+                var _this = this;
+                commonPlugins.showModal('deleteSingleModal', {
+                    onOk: function () {
+                        $(_this).attr('data', 0).find('img').attr('src', '../../../images/box-empty.png');
+                        commonPlugins.closeModal();
+                    },
+                    onCancel: function () {
+                        commonPlugins.closeModal();
+                    }
+                });
+            }
+        });
+
+
+        /**
+         * [点击全选按钮触发弹窗]
+         * @param [string] type [全选操作类型 all-d: 日常巡查, all-r: 定期检测, all-n: 无损检测, all-s: 静载测试 ]
+         * @desc 当前全选则直接取消全选, 当前未全选则弹出确认全选框
+        */
+        $('.all-select-btn').click(function () {
+            var type = $(this).attr('data-type');
+            var _this = this;
+            if ($(this).attr('data') == 0) {
+                commonPlugins.showModal(EnumModalType[type].func, {
+                    onOk: function () {
+                        $.each($('.general-test-table tbody tr'), function () {
+                            if ($(this).index() + 1 < $('.general-test-table tbody tr').length) {
+                                $(this).find('td:eq(' + EnumModalType[type].tdNum + ') a').attr('data', 1).find('img').attr('src', '../../../images/click-add.png');
+                            }
+                        });
+                        $(_this).attr('data', 1).find('img').attr('src', '../../../images/click-add.png');
+                        commonPlugins.closeModal();
+                    },
+                    onCancel: function () {
+                        commonPlugins.closeModal();
+                    }
+                });
+            }
+            else {
+                commonPlugins.showModal('deleteAllModal', {
+                    onOk: function () {
+                        $.each($('.general-test-table tbody tr'), function () {
+                            if ($(this).index() + 1 < $('.general-test-table tbody tr').length) {
+                                $(this).find('td:eq(' + EnumModalType[type].tdNum + ') a').attr('data', 0).find('img').attr('src', '../../../images/box-empty.png');
+                            }
+                        });
+                        $(_this).attr('data', 0).find('img').attr('src', '../../../images/box-empty.png');
+                        commonPlugins.closeModal();
+                    },
+                    onCancel: function () {
+                        commonPlugins.closeModal();
+                    }
+                });
+            }
+        });
+
+    </script>
+</body>
+
+</html>

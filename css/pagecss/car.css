@@ -1,0 +1,297 @@
+.bridge-modal-container {
+    padding: 7px 10px;
+}
+
+.bridge-modal-content {
+    background: #fff; 
+    position: relative;
+    padding-bottom: 30px;
+    min-height: 600px;
+}
+
+.close-btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    opacity: 0.7;
+}
+
+.close-btn img {
+    width: 16px;
+}
+
+.bridge-modal-header {
+    border-bottom: 1px solid #ccc;
+    height: 40px;
+    margin: 0 10px;
+}
+
+.bridge-modal-title {
+    float: left;
+    width: 240px;    
+    height: 40px;
+    line-height: 40px;
+}
+
+.bridge-modal-title img {
+    position: relative;
+    top: 2px;
+    margin-right: 5px;
+}
+
+.bridge-modal-title span {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.bridge-modal-tabs {
+    float: left;
+    height: 40px;
+    width: 670px;
+}
+
+.car-tabs li {
+    float: left;
+    margin-right: 10px;
+    padding: 11px 17px;
+    position: relative;
+    cursor: pointer;
+}
+
+.bridge-modal-tabs li {
+    float: left;
+    margin-right: 10px;
+}
+
+.bridge-modal-tabs li a {
+    padding: 11px 17px;
+    position: relative;
+    cursor: pointer;
+    display: block;
+    color: #333;
+}
+
+.bridge-modal-tabs li:last-child {
+    margin-right: 0;
+}
+
+.bridge-modal-tabs-active,
+.car-tabs-active {
+    border-bottom: 2px solid #000;
+}
+
+.car-tabs {
+    height: 40px;
+    border-bottom: 1px solid #ccc;
+    margin: 0 10px;
+}
+
+.car-pic {
+    display: none;
+}
+
+.car-msg-table-th {
+    height: 40px;
+    padding: 10px 0;
+    width: 100%;
+    background: #e5e5e5;
+    margin-top: 15px;
+}
+
+.car-msg-table-th li {
+    text-align: center;
+    float: left;
+    width: 6.666%;
+}
+
+.car-msg-table-box {
+    max-height: 500px;
+    overflow: auto;
+}
+
+.car-msg-table {
+    border: 1px solid #e5e5e5;
+    width: 100%;
+    border-bottom: 0;
+}
+
+.car-msg-table td {
+    border: 1px solid #e5e5e5;
+}
+
+.car-msg-table tr:hover {
+    background: #4bd96b;
+}
+
+.car-msg-table tr:first-child td {
+    width: 6.666%;
+}
+
+.add-car-form {
+    overflow: hidden;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.add-car-form li {
+    text-align: center;
+    float: left;
+    width: 6.666%;
+}
+
+.add-car-form li input {
+    width: 88%;
+    border: 1px solid #ccc;
+    height: 30px;
+    outline: none;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+.add-car-form li:first-child {
+    height: 30px;
+}
+
+.add-car-btn {
+    border: 1px solid #aaa;
+    width: 88%;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.add-car-btn img {
+    position: relative;
+    top: 2px;
+    margin-right: 5px;
+}
+
+.download-btn {
+    text-align: center;
+    margin-top: 40px;
+    padding-bottom: 40px;
+}
+
+.download-btn a {
+    margin: 0 30px;
+    border: 1px solid #aaa;
+    padding: 4px 10px;
+    cursor: pointer;
+}
+
+.download-btn a:hover {
+    opacity: 0.7;
+}
+
+.download-btn a img {
+    position: relative;
+    top: 2px;
+    margin-right: 5px;
+}
+
+.pic-list-table {
+    border: 0;
+    width: 100%;
+}
+
+.pic-list-table td {
+    border: 1px solid #e5e5e5;
+}
+
+.pic-list-table tr:hover {
+    background: #4bd96b;
+}
+
+.pic-list-table td:nth-child(n) {
+    border-left: 0;
+}
+.pic-list-table td:nth-child(4n) {
+    border-right: 0;
+}
+
+.pic-list-table tr:first-child td:nth-child(1) {
+    width: 15%;
+}
+
+.pic-list-table tr:first-child td:nth-child(2) {
+    width: 35%;
+}
+
+.pic-list-table tr:first-child td:nth-child(3) {
+    width: 28%;
+}
+
+.pic-list-table tr:first-child td:nth-child(4) {
+    width: 22%;
+}
+
+.op-btn {
+    margin: 0 15px;
+}
+
+.pic-box {
+    position: relative;
+    padding: 15px 0;
+}
+
+.pic-list-box {
+    width: 400px;
+    position: absolute;
+    background: #fff;
+    padding: 0 10px;
+    right: 0;
+}
+
+.pic-list-table-area {
+    border: 1px solid #e5e5e5;
+    min-height: 300px;
+}
+
+.pic-list-table-th {
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    background: #e5e5e5;
+}
+
+.pic-list-table-th li {
+    text-align: center;
+    float: left;
+}
+
+.pic-list-table-th li:nth-child(1) {
+    width: 15%;
+}
+
+.pic-list-table-th li:nth-child(2) {
+    width: 35%;
+}
+
+.pic-list-table-th li:nth-child(3) {
+    width: 28%;
+}
+
+.pic-list-table-th li:nth-child(4) {
+    width: 22%;
+}
+
+.pic-show {
+    width: 100%;
+}
+
+.pic-show-box {
+    margin: 0 430px 0 10px;
+}
+
+.pic-show-box img {
+    display: block;
+    width: 100%;
+}
+
+

@@ -1,0 +1,301 @@
+.bridge-modal-container {
+    padding: 7px 10px;
+}
+
+.bridge-modal-content {
+    background: #fff; 
+    position: relative;
+    padding-bottom: 30px;
+    min-height: 600px;
+}
+
+.close-btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    opacity: 0.7;
+}
+
+.close-btn img {
+    width: 16px;
+}
+
+.bridge-modal-header {
+    border-bottom: 1px solid #ccc;
+    height: 40px;
+    margin: 0 10px;
+}
+
+.bridge-modal-title {
+    float: left;
+    width: 240px;    
+    height: 40px;
+    line-height: 40px;
+}
+
+.bridge-modal-title img {
+    position: relative;
+    top: 2px;
+    margin-right: 5px;
+}
+
+.bridge-modal-title span {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.bridge-modal-tabs {
+    float: left;
+    height: 40px;
+    width: 670px;
+}
+
+.bridge-modal-tabs li {
+    float: left;
+    margin-right: 10px;
+}
+
+.bridge-modal-tabs li a {
+    padding: 11px 17px;
+    position: relative;
+    cursor: pointer;
+    display: block;
+    color: #333;
+}
+
+.bridge-modal-tabs li:last-child {
+    margin-right: 0;
+}
+
+.bridge-modal-tabs-active {
+    border-bottom: 2px solid #000;
+}
+
+.change-content {
+    position: relative;
+    padding: 30px 0 15px 0;
+}
+
+.change-chart-area {
+    width: 100%;
+}
+
+.change-chart-area-box {
+    margin: 0 440px 0 10px;
+}
+
+.change-level-box {
+    height: 33px;margin-top: 10px;
+}
+
+.change-level {
+    width: 230px;float:right;
+}
+
+.change-level label {
+    line-height:30px;
+}
+
+.change-level .select {
+    border: 1px solid #ccc;
+    width: 170px;
+    float: right;
+}
+
+.change-level .select-title {
+    color: #333;
+}
+
+.change-chart-box {
+    position: relative;
+}
+
+.change-chart-box label {
+    position: absolute;
+    z-index: 100;
+    right: 10px;
+    top: 18px;
+}
+
+.change-chart-box label::before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: #4bd96b;
+    position: absolute;
+    top: 3px;
+    left: -20px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -o-border-radius: 50px;
+    border: 1px solid #999;
+}
+
+.xaxis {
+    position: absolute;
+    z-index: 100;
+    bottom: 10px;
+    left: 65px;
+}
+
+.yaxis {
+    position: absolute;
+    z-index:100;
+    bottom: 65px;
+    left: 0;
+    transform: rotate(-90deg);
+}
+
+.change-chart {
+    width: 100%;
+    height: 380px;
+}
+
+.change-num-box {
+    width: 400px;
+    position: absolute;
+    background: #fff;
+    padding: 0 10px;
+    right: 0;
+}
+
+.change-num-table {
+    border: 1px solid #e5e5e5;
+    height: 362px;
+    margin-top: 10px;
+}
+
+.change-num-table-th {
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    background: #e5e5e5;
+}
+
+.change-num-table-th li {
+    text-align: center; 
+    float: left;
+    width: 20%;
+}
+
+.change-num-table-th li:nth-child(2) {
+    width: 40%;
+}
+
+.change-num-table table {
+    border: 0;
+    border-top: 1px solid #e5e5e5;
+    width: 100%;
+}
+
+.change-num-table table td {
+    border: 1px solid #e5e5e5;
+}
+
+.change-num-table table td:nth-child(n) {
+    border-left: 0;
+}
+.change-num-table table td:nth-child(4n) {
+    border-right: 0;
+}
+
+.change-num-table table tr:hover {
+    background: #4bd96b;
+}
+
+.change-num-table table tr:first-child td {
+    width: 20%;
+}
+
+.change-num-table table tr:first-child td:nth-child(2) {
+    width: 40%;
+}
+
+.not-data-tr:hover {
+    background: none !important;
+}
+
+.not-data-tr td {
+    border: 0 !important;
+}
+
+.not-data-tr input {
+    width: 80%;
+    height: 30px;
+    border: 1px solid #ccc;
+    padding: 0 10px;
+    outline: none;
+}
+
+.add-change-btn {
+    border: 1px solid #aaa;
+    padding: 4px 10px;
+    cursor: pointer;
+}
+
+.add-change-btn:hover {
+    opacity: 0.7;
+}
+
+.add-change-btn img {
+    position: relative;
+    top: 2px;
+    margin-right: 5px;
+}
+
+.change-analyze-label {
+    margin: 50px 10px 10px 10px;
+}
+
+.change-analyze-table-th {
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    background: #e5e5e5;
+}
+
+.change-analyze-table-th li {
+    text-align: center;
+    float: left;
+    width: 7.1428%
+}
+
+.change-analyze-table {
+    border: 1px solid #e5e5e5;
+    width: 100%;
+    border-bottom: 0;
+}
+
+.change-analyze-table td {
+    border: 1px solid #e5e5e5;
+}
+
+.change-analyze-table tr:hover {
+    background: #4bd96b;
+}
+
+.change-analyze-table tr:first-child td {
+    width: 7.1428%;
+}
+
+.change-bottom-btn {
+    text-align: center;
+    margin: 35px 0;
+}
+
+.change-bottom-btn a {
+    margin: 0 20px;
+    border: 1px solid #aaa;
+    padding: 4px 10px;
+}
+
+.change-bottom-btn a img {
+    position: relative;
+    top: 2px;
+    margin-right: 5px;
+}

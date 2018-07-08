@@ -1,0 +1,609 @@
+.area-content {
+    padding: 10px;
+}
+
+.area-content-in {
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.project-title {
+    border-bottom: 1px solid #fff;
+    text-align: center;
+    font-size: 18px;
+    font-weight: normal;
+    height: 40px;
+    line-height: 40px;
+}
+
+.project-op-items {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    position: relative;
+}
+
+.op-item {
+    border: 1px solid #fff;
+    padding: 3px 13px;
+    font-size: 16px;
+    margin: 0 2px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.op-item:hover,
+.op-item-active {
+    background: #58b9fe;
+}
+
+.close-btn {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+}
+
+.msg-head {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    position: relative;
+    border-top: 1px solid #fff;
+}
+
+.msg-head a {
+    position: absolute;
+    right: 10px;
+}
+
+
+/** 桥梁列表模块 **/
+.search-area {
+    margin: 0 30px;
+    height: 40px;
+    line-height: 40px;
+    border-top: 1px solid #fff;
+}
+
+.search-area-content {
+    width: 600px;
+    height: 40px;
+    float: right;
+}
+
+.search-area-content > span {
+    float: left;
+}
+
+.area-search-input {
+    margin-top: 8px;
+    float: left;
+    background: none;
+    border: 1px solid #fff;
+    width: 170px;
+    height: 22px;
+    padding: 0 5px;
+    outline: none;
+    color: #fff;
+}
+
+.search-btn {
+    float:left;
+    height: 24px;
+    width: 80px;
+    border: 1px solid #fff;
+    background: none;
+    color: #fff;
+    float: right;
+    margin-top: 8px;
+    cursor: pointer;
+    line-height: 24px;
+}
+
+.search-btn:hover {
+    opacity: 0.7;
+}
+
+.area-select {
+    float: left;
+    width: 180px;
+    line-height: 20px;
+    margin-top: 8px;
+    height: 22px;
+    margin-right: 20px;
+}
+
+.area-select .select {
+    height: 22px;
+} 
+
+.area-select .select-title {
+    line-height: 22px;
+} 
+
+.area-select .select::after {
+    top: 4px;
+} 
+
+.area-select .select ul {
+    top:24px;
+} 
+
+.bridge-table {
+    width: 100%;
+    border-color: #fff;
+    border-left: 0;
+    border-right: 0;
+}
+
+.bridge-table tbody tr:hover {
+    background: #4cdb65;
+}
+
+.bridge-table th,
+.bridge-table td {
+    border: 1px solid #fff;
+}
+
+.bridge-table tr th:last-child,
+.bridge-table tr td:last-child {
+    border-right: 0;
+}
+
+.bridge-table tr th:first-child,
+.bridge-table tr td:first-child {
+    border-left: 0;
+}
+
+.page-bottom {
+    height: 52px;
+}
+
+.page-bottom .pagination {
+    float: left;
+}
+
+.add-bridge-btn,
+.all-select-btn {
+    cursor: pointer;
+    margin-right: 10px;
+    margin-top: 10px;
+    display: block;
+    float: right;
+    color: #fff;
+    padding: 5px 10px;
+    text-align: center;
+    background: #4bd96b;
+    position: relative;
+}
+
+.all-select-btn {
+    padding-right: 40px;
+}
+
+.all-select-btn img {
+    position: absolute;
+    top: 6px;
+    right: 10px;
+}
+
+.add-bridge-tis {
+    margin-top: 10px;
+    display: block;
+    float: right;
+    color: #fff;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    width: 100px;
+}
+
+
+
+.modal-title {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.modal-title img {
+    position: relative;
+    top: 2px;
+}
+
+.modal-title-last {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.modal-title-last img {
+    height: 120px;
+}
+
+.confirm-btn {
+    display: block;
+    background: #ff4d67;
+    color: #fff;
+    width: 110px;
+    margin: 0 auto;
+    padding: 5px 0;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.select-confirm-btn {
+    display: block;
+    background: #4bd96b;
+    color: #fff;
+    width: 110px;
+    margin: 0 auto;
+    padding: 5px 0;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.cancel-btn {
+    width: 110px;
+    background: none;
+    border: 1px solid #ff4d67;
+    margin: 0 auto;
+    display: block;
+    height: 30px;
+    outline: none;
+    cursor: pointer;
+}
+
+.select-confirm-btn:hover,
+.confirm-btn:hover,
+.cancel-btn:hover {
+    opacity: 0.7;
+}
+
+
+
+/** 桥梁信息 **/
+.bridge-edit {
+    margin: 0 30px;
+    border-top: 1px solid #fff;
+}
+
+.bridge-form {
+    width: 710px;
+    margin: 30px auto;
+    height: 300px;
+}
+
+.bridge-form-left {
+    float: left;
+}
+
+.bridge-form-right {
+    float: right;
+}
+
+.bridge-form-item {
+    margin-bottom: 10px;
+}
+
+.bridge-form-item label {
+    display: inline-block;
+    width: 100px;
+    position: relative;
+    line-height: 30px;
+}
+
+.bridge-form-item .require {
+    color: #ff4b4b;
+    position: absolute;
+    left: -15px;
+    display: inline;
+}
+
+.bridge-form-item input {
+    height: 30px;
+    width: 200px;
+    background: none;
+    border: 1px solid #fff;
+    padding: 0 10px;
+    outline: none;
+    color: #fff;
+}
+
+.bridge-op {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.bridge-op a {
+    border: 1px solid #fff;
+    padding: 3px 10px;
+    margin: 0 3px;
+    cursor: pointer;
+}
+
+.bridge-op a:hover {
+    opacity: 0.7
+}
+
+.bridge-op a span {
+    position: relative;
+    bottom: 1px;
+    left: 5px;
+}
+
+.bridge-upload {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    position: relative;
+    border-top: 1px solid #fff;
+    margin-top: 20px;
+}
+
+.bridge-upload input[type="text"] {
+    height: 25px;
+    width: 80px;
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 0 10px;
+    outline: none;
+}
+
+.bridge-upload input[type="file"] {
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+.bridge-upload a {
+    border: 1px solid #fff;
+    padding: 3px 10px;
+    margin: 0 3px;
+    position: relative;
+    top: 1px;
+    cursor: pointer;
+}
+
+.bridge-upload a:hover {
+    opacity: 0.7;
+}
+
+.bridge-upload a span {
+    position: relative;
+    bottom: 1px;
+    left: 5px;
+}
+
+.bridge-province-select,
+.bridge-city-select,
+.bridge-area-select {
+    width: 222px;
+    float: right;
+}
+
+.bridge-city-select {
+    position: relative;
+    right: 1px;
+}
+
+
+::-webkit-input-placeholder { 
+    color: #fff;
+}
+:-moz-placeholder { 
+    color: #fff;
+}
+::-moz-placeholder { 
+    color: #fff;
+}
+:-ms-input-placeholder { 
+    color: #fff;
+}
+
+
+
+/** 修改县区 **/
+
+.search-area {
+    margin: 0 30px;
+    height: 40px;
+    line-height: 40px;
+    border-top: 1px solid #fff;
+}
+
+.search-area-content {
+    width: 600px;
+    height: 40px;
+    float: right;
+}
+
+.search-area-content > span {
+    float: left;
+}
+
+.area-search-input {
+    margin-top: 8px;
+    float: left;
+    background: none;
+    border: 1px solid #fff;
+    width: 170px;
+    height: 22px;
+    padding: 0 5px;
+    outline: none;
+    color: #fff;
+}
+
+.search-btn {
+    float:left;
+    height: 24px;
+    width: 80px;
+    border: 1px solid #fff;
+    background: none;
+    color: #fff;
+    float: right;
+    margin-top: 8px;
+    cursor: pointer;
+    line-height: 24px;
+}
+
+.search-btn:hover {
+    opacity: 0.7;
+}
+
+.area-select {
+    float: left;
+    width: 180px;
+    line-height: 20px;
+    margin-top: 8px;
+    height: 22px;
+    margin-right: 20px;
+}
+
+.area-select .select {
+    height: 22px;
+} 
+
+.area-select .select-title {
+    line-height: 22px;
+} 
+
+.area-select .select::after {
+    top: 4px;
+} 
+
+.area-select .select ul {
+    top:24px;
+} 
+
+.area-table {
+    width: 100%;
+    border-color: #fff;
+    border-left: 0;
+    border-right: 0;
+}
+
+.area-table tbody tr:hover {
+    background: #4cdb65;
+}
+
+.area-table th,
+.area-table td {
+    border: 1px solid #fff;
+}
+
+.area-table tr th:last-child,
+.area-table tr td:last-child {
+    border-right: 0;
+}
+
+.area-table tr th:first-child,
+.area-table tr td:first-child {
+    border-left: 0;
+}
+
+.area-table tr th:last-child {
+    width: 20%;
+}
+
+.area-table tr td a {
+    margin: 0 20px;
+}
+
+.page-bottom {
+    height: 52px;
+}
+
+.page-bottom .pagination {
+    float: left;
+}
+
+.modal-title {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.modal-title img {
+    position: relative;
+    top: 2px;
+}
+
+.modal-title-last {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.modal-title-last img {
+    height: 120px;
+}
+
+.area-input-item {
+    margin: 10px auto;
+    width: 280px;
+}
+
+.first-input {
+    margin-top: 100px;
+}
+
+.area-input-item label {
+    width: 70px;
+    display: inline-block; 
+    text-align: right;
+}
+
+.area-input-item input {
+    width: 170px;
+    height: 30px;
+    border: 1px solid #ccc;
+    padding: 0 10px;
+    outline: none;
+}
+
+.confirm-btn {
+    display: block;
+    background: #ff4d67;
+    color: #fff;
+    width: 110px;
+    margin: 0 auto;
+    padding: 5px 0;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.submit-confirm-btn {
+    display: block;
+    background: #4bd96b;
+    color: #fff;
+    width: 110px;
+    margin: 0 auto;
+    padding: 5px 0;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.cancel-btn {
+    width: 110px;
+    background: none;
+    border: 1px solid #ff4d67;
+    margin: 0 auto;
+    display: block;
+    height: 30px;
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.submit-confirm-btn:hover,
+.confirm-btn:hover,
+.cancel-btn:hover {
+    opacity: 0.7;
+}

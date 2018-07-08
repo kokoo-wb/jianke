@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>桥梁智能检测系统（E.T-test）</title>
+    <link rel="stylesheet" href="../../../../css/global.css" />
+    <link rel="stylesheet" href="../../../../css/pagecss/strain.css" />
+
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="menu">
+            <h1>
+                <a href="#">
+                    <img src="../../../../images/logo.png" alt="" />
+                    <span>建科易检</span>
+                </a>
+            </h1>
+            <ul>
+                <li>
+                    <a href="#" data="systemCheck">检测系统</a>
+                </li>
+                <li>
+                    <a href="#">路桥管理</a>
+                </li>
+                <li>
+                    <a href="../../../user_manage.html">用户管理</a>
+                </li>
+                <li>
+                    <a class="logout" onclick="commonPlugins.logout()">
+                        <img src="../../../../images/logout.png" alt="">
+                        <span>/</span>
+                        <span class="logout-btn">退出登录</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="slide-menu"></div>
+    </header>
+
+    <div class="container">
+        <nav class="sidebar">
+            <img src="../../../../images/trianglecolour.png" class="triangle" />
+            <div class="search-input">
+                <img src="../../../../images/searchicon.png" />
+                <input type="text" />
+            </div>
+
+            <ul class="nav">
+                <li class="nav-item">
+                    <div class="nav-first-item">
+                        <span>信息统计</span>
+                        <span class="nav-item-show"></span>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="../../../project_statistics.html">项目信息统计</a>
+                        </li>
+                        <li>
+                            <a href="../../../area_statistics.html">区域信息统计</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item nav-open">
+                    <div class="nav-first-item">
+                        <span>项目管理</span>
+                        <span class="nav-item-show"></span>
+                    </div>
+                    <ul>
+                        <li class="nav-active">
+                            <a href="../../project_list.html">进行中项目</a>
+                        </li>
+                        <li>
+                            <a href="">归档项目</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <div class="nav-first-item">
+                        <span>报告管理</span>
+                        <span class="nav-item-show"></span>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="">项目信息统计</a>
+                        </li>
+                        <li>
+                            <a href="">区域信息统计</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <div class="content-in">
+                <div class="bridge-modal-container">
+                    <div class="bridge-modal-content">
+                        <a href="staticload.html" class="close-btn">
+                            <img src="../../../../images/crossblack.png" />
+                        </a>
+                        <div class="bridge-modal-header">
+                            <div class="bridge-modal-title">
+                                <img src="../../../../images/icon-s.png" />
+                                <span>芳村客运站人行天桥</span>
+                            </div>
+                            <ul class="bridge-modal-tabs">
+                                <li>
+                                    <a href="sl_bridge_param.html">桥梁设计参数</a>
+                                </li>
+                                <li>
+                                    <a href="sl_conditions.html">工况</a>
+                                </li>
+                                <li>
+                                    <a href="sl_car.html">车辆</a>
+                                </li>
+                                <li>
+                                    <a href="sl_loadingplan.html">加载布置图</a>
+                                </li>
+                                <li class="bridge-modal-tabs-active">
+                                    <a href="sl_strain.html">应变计算</a>
+                                </li>
+                                <li>
+                                    <a href="sl_deflection.html">挠度计算</a>
+                                </li>
+                                <li>
+                                    <a href="sl_report.html">报告</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="change-content">
+                            <div class="change-num-box">
+                                <label>理论应变值</label>
+                                <div class="change-num-table">
+                                    <ul class="change-num-table-th">
+                                        <li>序号</li>
+                                        <li>应变值(με)</li>
+                                        <li>修改应变值</li>
+                                        <li>操作</li>
+                                    </ul>
+                                    <div style="height: 322px;overflow: auto;">
+                                        <table>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>22</td>
+                                                <td>
+                                                    <a href="#">
+                                                        <img src="../../../../images/editing.png" />
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <a href="#">
+                                                        <img src="../../../../images/delete-black.png" />
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>22</td>
+                                                <td>
+                                                    <a href="#">
+                                                        <img src="../../../../images/editing.png" />
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <a href="#">
+                                                        <img src="../../../../images/delete-black.png" />
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr class="not-data-tr">
+                                                <td></td>
+                                                <td>
+                                                    <input type="text" />
+                                                </td>
+                                                <td></td>
+                                                <td>
+                                                    <a class="add-change-btn">
+                                                        <img src="../../../../images/new.png" />
+                                                        <span>新增</span>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="change-chart-area">
+                                <div class="change-chart-area-box">
+                                    <label>应变图</label>
+                                    <div class="change-level-box">
+                                        <div class="change-level">
+                                            <label>应变级</label>
+                                            <div class="select">
+                                                <span class="select-title">应变级</span>
+                                                <ul>
+                                                    <li>1级</li>
+                                                    <li>2级</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="change-chart-box">
+                                        <label>理论应变值</label>
+                                        <span class="xaxis">测点编号</span>
+                                        <span class="yaxis">应变值</span>
+                                        <div id="changeChart" class="change-chart"></div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="change-analyze-label">应变数据分析</div>
+
+                            <ul class="change-analyze-table-th">
+                                <li>测点</li>
+                                <li>一级荷载</li>
+                                <li>一级荷载</li>
+                                <li>一级荷载</li>
+                                <li>一级荷载</li>
+                                <li>一级荷载</li>
+                                <li>一级荷载</li>
+                                <li>一级荷载</li>
+                                <li>一级荷载</li>
+                                <li>一级荷载</li>
+                                <li>卸载</li>
+                                <li>弹性变形</li>
+                                <li>满载理论值</li>
+                                <li>校验系数</li>
+                            </ul>
+
+                            <table class="change-analyze-table">
+                                <tr>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>2</td>
+                                    <td>2</td>
+                                    <td>2</td>
+                                    <td>2</td>
+                                    <td>2</td>
+                                    <td>2</td>
+                                    <td>2</td>
+                                    <td>4</td>
+                                    <td>2</td>
+                                    <td>2</td>
+                                    <td>2</td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>2</td>
+                                    <td>2</td>
+                                    <td>2</td>
+                                    <td>2</td>
+                                    <td>2</td>
+                                    <td>2</td>
+                                    <td>2</td>
+                                    <td>4</td>
+                                    <td>2</td>
+                                    <td>2</td>
+                                    <td>2</td>
+                                    <td>2</td>
+                                </tr>
+                            </table>
+
+                            <div class="change-bottom-btn">
+                                <a>
+                                    <img src="../../../../images/editing.png" />
+                                    <span>修改应变值</span>
+                                </a>
+                                <a>
+                                    <img src="../../../../images/download-black.png" />
+                                    <span>导出应变值</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../../../../lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="../../../../lib/echarts/echarts.min.js"></script>
+    <script src="../../../../js/common.js"></script>
+    <script src="../../../../js/charts.js"></script>
+
+    <script>
+        // 初始化理论应变值折线图
+        chartExecute.lineChartOne({
+            id: 'changeChart',
+            title: '理论应变值',
+            color: ['#4bd96b', '#999', '#89c2a1'],
+            yAxisData: [3.9, 5.9, 11.1, 18.7, 48.3, 69.2, 231.6, 46.6, 55.4, 18.4],
+            xAxisData: ["Y1", "Y2", "Y3", "Y4", "Y5", "Y6", "Y7", "Y8", "Y9", "Y10"]
+        });
+    </script>
+</body>
+
+</html>

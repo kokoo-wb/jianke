@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>桥梁智能检测系统（E.T-test）</title>
+    <link rel="stylesheet" href="../../../../css/global.css" />
+    <link rel="stylesheet" href="../../../../css/pagecss/sl_report.css" />
+
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="menu">
+            <h1>
+                <a href="#">
+                    <img src="../../../../images/logo.png" alt="" />
+                    <span>建科易检</span>
+                </a>
+            </h1>
+            <ul>
+                <li>
+                    <a href="#" data="systemCheck">检测系统</a>
+                </li>
+                <li>
+                    <a href="#">路桥管理</a>
+                </li>
+                <li>
+                    <a href="../../../user_manage.html">用户管理</a>
+                </li>
+                <li>
+                    <a class="logout" onclick="commonPlugins.logout()">
+                        <img src="../../../../images/logout.png" alt="">
+                        <span>/</span>
+                        <span class="logout-btn">退出登录</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="slide-menu"></div>
+    </header>
+
+    <div class="container">
+        <nav class="sidebar">
+            <img src="../../../../images/trianglecolour.png" class="triangle" />
+            <div class="search-input">
+                <img src="../../../../images/searchicon.png" />
+                <input type="text" />
+            </div>
+
+            <ul class="nav">
+                <li class="nav-item">
+                    <div class="nav-first-item">
+                        <span>信息统计</span>
+                        <span class="nav-item-show"></span>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="../../../project_statistics.html">项目信息统计</a>
+                        </li>
+                        <li>
+                            <a href="../../../area_statistics.html">区域信息统计</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item nav-open">
+                    <div class="nav-first-item">
+                        <span>项目管理</span>
+                        <span class="nav-item-show"></span>
+                    </div>
+                    <ul>
+                        <li class="nav-active">
+                            <a href="../../project_list.html">进行中项目</a>
+                        </li>
+                        <li>
+                            <a href="">归档项目</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <div class="nav-first-item">
+                        <span>报告管理</span>
+                        <span class="nav-item-show"></span>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="">项目信息统计</a>
+                        </li>
+                        <li>
+                            <a href="">区域信息统计</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <div class="content-in">
+                <div class="bridge-modal-container">
+                    <div class="bridge-modal-content">
+                        <a href="staticload.html" class="close-btn">
+                            <img src="../../../../images/crossblack.png" />
+                        </a>
+                        <div class="bridge-modal-header">
+                            <div class="bridge-modal-title">
+                                <img src="../../../../images/icon-s.png" />
+                                <span>芳村客运站人行天桥</span>
+                            </div>
+                            <ul class="bridge-modal-tabs">
+                                <li>
+                                    <a href="sl_bridge_param.html">桥梁设计参数</a>
+                                </li>
+                                <li>
+                                    <a href="sl_conditions.html">工况</a>
+                                </li>
+                                <li>
+                                    <a href="sl_car.html">车辆</a>
+                                </li>
+                                <li>
+                                    <a href="sl_loadingplan.html">加载布置图</a>
+                                </li>
+                                <li>
+                                    <a href="sl_strain.html">应变计算</a>
+                                </li>
+                                <li>
+                                    <a href="sl_deflection.html">挠度计算</a>
+                                </li>
+                                <li class="bridge-modal-tabs-active">
+                                    <a href="sl_report.html">报告</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="report-btn">
+                            <a>
+                                <img src="../../../../images/download-black.png" />
+                                <span>下载记录</span>
+                            </a>
+                            <a class="make-record">
+                                <img src="../../../../images/new-report.png" />
+                                <span>生成记录</span>
+                            </a>
+                        </div>
+
+                        <div class="progress">
+                            <div class="progress-bar"></div>
+                        </div>
+
+                        <div class="success-msg">
+                            <img src="../../../../images/tick.png" />
+                            <p>报告生成完毕！</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../../../../lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="../../../../js/common.js"></script>
+
+    <script>
+
+        // 生成报告进度条效果
+        $('.make-record').click(function () {
+            $('.progress').show();
+            var currWidth = 0;
+
+            var timeProgress = setInterval(function () {
+                currWidth += 1;
+                $('.progress-bar').css('width', currWidth + '%');
+                if (currWidth == 100) {
+                    clearInterval(timeProgress);
+                    $('.progress').hide();
+                    $('.progress-bar').css('width', '0%');
+                    $('.success-msg').show();
+
+                    var timeSuccess = setTimeout(function () {
+                        $('.success-msg').hide();
+                        clearTimeout(timeSuccess);
+                    }, 3000);
+                }
+            }, 10);
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,149 @@
+.bridge-modal-container {
+    padding: 7px 10px;
+}
+
+.bridge-modal-content {
+    background: #fff; 
+    position: relative;
+    padding-bottom: 30px;
+    min-height: 600px;
+}
+
+.close-btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    opacity: 0.7;
+}
+
+.close-btn img {
+    width: 16px;
+}
+
+.bridge-modal-header {
+    border-bottom: 1px solid #ccc;
+    height: 40px;
+    margin: 0 10px;
+}
+
+.bridge-modal-title {
+    float: left;
+    width: 290px;    
+    height: 40px;
+    line-height: 40px;
+}
+
+.bridge-modal-title img {
+    position: relative;
+    top: 2px;
+    margin-right: 5px;
+}
+
+.bridge-modal-title span {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.bridge-modal-tabs {
+    float: left;
+    height: 40px;
+    width: 670px;
+}
+
+.bridge-modal-tabs li {
+    float: left;
+    margin-right: 10px;
+}
+
+.bridge-modal-tabs li a {
+    padding: 11px 30px;
+    position: relative;
+    cursor: pointer;
+    display: block;
+    color: #333;
+}
+
+.bridge-modal-tabs li:last-child {
+    margin-right: 0;
+}
+
+.bridge-modal-tabs-active {
+    border-bottom: 2px solid #000;
+}
+
+.bciassess-num-table-box {
+    max-height: 500px;
+    overflow: auto;
+    margin-top: 15px;
+    border: 1px solid #e5e5e5;
+}
+
+.bciassess-num-table {
+    border: 0;
+    width: 100%;
+}
+
+.bciassess-num-table td {
+    border: 1px solid #e5e5e5;
+}
+
+.bciassess-num-table tr {
+    height: 30px;
+}
+
+.bciassess-num-table tr:hover {
+    background: #4bd96b;
+}
+
+.bciassess-num-table tr:first-child td {
+    border-top: 0;
+}
+
+.bciassess-num-table tr:last-child td {
+    border-bottom: 0;
+}
+
+.bciassess-num-table tr:first-child td:nth-child(1) {
+    width: 12%;
+}
+
+.bciassess-num-table tr:first-child td:nth-child(2) {
+    width: 33%;
+}
+
+.bciassess-num-table tr:first-child td:nth-child(3) {
+    width: 12%;
+}
+
+.bciassess-num-table tr:first-child td:nth-child(4) {
+    width: 12%;
+}
+
+.bciassess-num-table tr:first-child td:nth-child(5) {
+    width: 19%;
+}
+
+.bciassess-num-table tr:first-child td:nth-child(6) {
+    width: 12%;
+}
+
+.bciassess-bottom-btn {
+    text-align: center;
+    margin: 35px 0;
+}
+
+.bciassess-bottom-btn a {
+    margin: 0 25px;
+    border: 1px solid #aaa;
+    padding: 4px 10px;
+}
+
+.bciassess-bottom-btn a img {
+    position: relative;
+    top: 2px;
+    margin-right: 5px;
+}

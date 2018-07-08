@@ -1,0 +1,33 @@
+/**
+ *   Author zhuhuishao
+ *   Name container.css
+ *   
+ *   功能： 提供页面容器对应的css,
+ *   描述： --------------------------------------------
+ */
+
+.container {
+    position: relative;
+}
+
+.content {
+    width: 100%;
+}
+
+.content-in {
+    background-image: url('../images/background.png');
+    background-size: 100% auto;
+    background-repeat: repeat-y;
+    min-height: 650px;
+    margin-left: 220px;
+    position: relative;    
+}
+
+.content-full-screen {
+    background-image: url('../images/background.png');
+    background-size: 100% auto;
+    background-repeat: repeat-y;
+    min-height: 840px;
+    padding: 30px 0; 
+    position: relative;
+}

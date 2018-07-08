@@ -1,0 +1,193 @@
+.bridge-modal-container {
+    padding: 7px 10px;
+}
+
+.bridge-modal-content {
+    background: #fff; 
+    position: relative;
+    padding-bottom: 30px;
+    min-height: 600px;
+}
+
+.close-btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    opacity: 0.7;
+}
+
+.close-btn img {
+    width: 16px;
+}
+
+.bridge-modal-header {
+    border-bottom: 1px solid #ccc;
+    height: 40px;
+    margin: 0 10px;
+}
+
+.bridge-modal-title {
+    float: left;
+    width: 290px;    
+    height: 40px;
+    line-height: 40px;
+}
+
+.bridge-modal-title img {
+    position: relative;
+    top: 2px;
+    margin-right: 5px;
+}
+
+.bridge-modal-title span {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.bridge-modal-tabs {
+    float: left;
+    height: 40px;
+    width: 670px;
+}
+
+.bridge-modal-tabs li {
+    float: left;
+    margin-right: 10px;
+}
+
+.bridge-modal-tabs li a {
+    padding: 11px 30px;
+    position: relative;
+    cursor: pointer;
+    display: block;
+    color: #333;
+}
+
+.bridge-modal-tabs li:last-child {
+    margin-right: 0;
+}
+
+.bridge-modal-tabs-active {
+    border-bottom: 2px solid #000;
+}
+
+.bridge-search-box {
+    height: 25px;
+    margin: 10px;
+}
+
+.bridge-search {
+    width: 360px;
+    float: right;
+}
+
+.bridge-search input {
+    height: 22px;
+    outline: none;
+    border: 1px solid #ccc;
+    padding: 0 10px;
+    width: 170px;
+}
+
+.bridge-search a {
+    display: block;
+    height: 22px;
+    width: 70px;
+    text-align: center;
+    line-height: 22px;
+    border: 1px solid #ccc;
+    float: right;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.bridge-search a:hover {
+    opacity: 0.7
+}
+
+.bridge-sick-table-th {
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    background: #e5e5e5;
+}
+
+.bridge-sick-table-th li {
+    text-align: center;
+    float: left;
+    width: 8%
+}
+
+.bridge-sick-table-th li:nth-child(1) {
+    width: 6%
+}
+
+.bridge-sick-table-th li:nth-child(2) {
+    width: 4%
+}
+
+.bridge-sick-table-th li:nth-child(5) {
+    width: 16%
+}
+
+.bridge-sick-table-th li:nth-child(6) {
+    width: 23%
+}
+
+.bridge-sick-table-th li:nth-child(7) {
+    width: 27%
+}
+
+.bridge-sick-table-box {
+    max-height: 550px;
+    overflow: auto;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.bridge-sick-table {
+    width: 100%;
+}
+
+.bridge-sick-table td {
+    border: 1px solid #e5e5e5;
+}
+
+.bridge-sick-table tr {
+    height: 30px;
+}
+
+.bridge-sick-table tr:first-child td:nth-child(1) {
+    width: 6%;
+}
+
+.bridge-sick-table tr:first-child td:nth-child(2) {
+    width: 4%;
+}
+
+.bridge-sick-table tr:first-child td:nth-child(3) {
+    width: 8%;
+}
+
+.bridge-sick-table tr:first-child td:nth-child(4) {
+    width: 8%;
+}
+
+.bridge-sick-table tr:first-child td:nth-child(5) {
+    width: 16%;
+}
+
+.bridge-sick-table tr:first-child td:nth-child(6) {
+    width: 23%;
+}
+
+.bridge-sick-table tr:first-child td:nth-child(7) {
+    width: 27%;
+}
+
+.bridge-sick-table tr:first-child td:nth-child(8) {
+    width: 8%;
+}
